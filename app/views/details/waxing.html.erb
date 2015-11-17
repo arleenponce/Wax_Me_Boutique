@@ -1,11 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Services</h1>
+<h1>Waxing Services</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Service type</th>
       <th>Service name</th>
       <th>Cost ($)</th>
       <th>Time (mins)</th>
@@ -15,9 +14,10 @@
   </thead>
 
   <tbody>
+    
     <% @services.each do |service| %>
+    <% if service.service_type = 'Waxing' %>
       <tr>
-        <td><%= service.service_type %></td>
         <td><%= service.service_name %></td>
         <td><%= service.cost %></td>
         <td><%= service.time %></td>
@@ -26,6 +26,7 @@
         <td><%= link_to 'Edit', edit_service_path(service) %></td>
         <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+    <% end %>
     <% end %>
   </tbody>
 </table>

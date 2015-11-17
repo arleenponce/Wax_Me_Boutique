@@ -7,12 +7,12 @@
 
 <p>
   <strong>Cost:</strong>
-  <%= @service.cost %>
+  $<%= @service.cost %>
 </p>
 
 <p>
   <strong>Time:</strong>
-  <%= @service.time %>
+  <%= @service.time %> minutes
 </p>
 
 <p>
@@ -20,5 +20,9 @@
   <%= @service.description %>
 </p>
 
+<% if admin_signed_in? %>
 <%= link_to 'Edit', edit_service_path(@service) %> |
 <%= link_to 'Back', services_path %>
+<% else %>
+<%= link_to 'Back', services_path %>
+<% end %>

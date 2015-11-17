@@ -1,6 +1,6 @@
 class ServicesController < ApplicationController
   before_action :set_service, only: [:show, :edit, :update, :destroy]
-
+  # before_action :authenticate_user!, except: [:show]
   # GET /services
   # GET /services.json
   def index
@@ -59,6 +59,8 @@ class ServicesController < ApplicationController
       format.html { redirect_to services_url, notice: 'Service was successfully destroyed.' }
       format.json { head :no_content }
     end
+
+    
   end
 
   private
@@ -69,6 +71,6 @@ class ServicesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def service_params
-      params.require(:service).permit(:service_name, :cost, :time, :description)
+      params.require(:service).permit(:service_name, :cost, :time, :description, :service_type)
     end
 end
