@@ -10,7 +10,11 @@
       </ul>
     </div>
   <% end %>
-
+  
+  <div class="field">
+    <%= f.label :service_type %><br>
+    <%= f.select :service_type, [['Waxing','waxing'],['Skin Care','skin care'],['Spray Tan','spray tan']] %>
+  </div>
   <div class="field">
     <%= f.label :service_name %><br>
     <%= f.text_field :service_name %>
