@@ -1,0 +1,49 @@
+
+
+<body>
+<!--   <div class="row spacer">
+  </div> -->
+  <div class="row main">
+   <div class="col-md-1">
+   </div>
+   <div class="col-md-4">
+      <h1 id="title">Skin <br>Care</h1>
+    </div>
+    <div class="col-md-6 menu">
+      <div class="row spacer">
+      </div>
+      <div class="row" id="table-head">
+            <div class="col-md-4">Service name</div>
+            <div class="col-md-2">Cost ($)</div>
+            <div class="col-md-3">Time (mins)</div>
+            <div class="col-md-3"></div>
+      </div>
+
+      <!-- <div class="row" id="table-body"> -->
+          
+          <% @skin_services.each do |service| %>
+              <div class="row" id="table-row">
+                  <div class="col-md-4">
+                    <%= service.service_name %>
+                  </div>
+                  <div class="col-md-2">
+                    <%= service.cost %>
+                  </div>
+                  <div class="col-md-3">
+                    <%= service.time %>
+                  </div>
+                 <div class="col-md-3">
+                  <%= link_to 'See Details', service %>
+                </div>
+              </div>
+          <% end %>
+        
+      <div class="row spacer">
+      </div>
+    </div>
+    <div class="col-md-1">
+   </div>
+  </div>
+  <div class="row spacer">
+  </div>
+</body>

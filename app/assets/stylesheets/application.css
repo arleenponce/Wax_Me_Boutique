@@ -13,3 +13,48 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+	background: url(../images/green_bckgrd.jpg);
+}
+
+.spacer {
+	height: 1em;
+}
+
+.table_spacer {
+	height: 1em;
+}
+
+.menu {
+	background-color: rgba(255,255,255,.6);
+	border-radius: 30px;
+	height: 700px;
+
+}
+
+.main {
+	height: 100%;
+}
+
+h1#title {
+	font-family:'FontAwesome';
+	font-size: 6em;
+	padding-top: .5em;
+	color: white;
+	
+}
+
+div#table-head {
+	font-size: 1.8em;
+	font-weight: bold;
+	padding-bottom: .4em
+}
+
+div#table-row {
+	font-size: 1.4em;
+	padding-bottom: .2em
+}
+
+p#notice {
+}
