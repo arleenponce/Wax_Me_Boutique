@@ -1,21 +1,24 @@
+<p id="notice"><%= notice %></p>
 
-
-<body>
+<body class="body">
 <!--   <div class="row spacer">
   </div> -->
-  <div class="row main">
+  <div class="row">
    <div class="col-md-1">
    </div>
    <div class="col-md-4">
-      <h1 id="title">Skin <br>Care</h1>
+      <h1 id="title">Skin Care</h1>
+      <p>Éminence was voted Favorite Skin Care Line by Skin Care Professionals and #1 For Skin Care Results in the Natural and Organic Spa Industry.
+ 
+Éminence is the first skin care line to offer a complete collection made with Biodynamic® ingredients, the purest, most nutrient-rich Mother Nature has to offer. Biodynamic farming views the farm as a living organism: self-contained, self-sustaining, following the cycles of nature. To be certified, Biodynamic® products must contain at least 95% organic with up to 95% Biodynamic® ingredients.</p>
     </div>
     <div class="col-md-6 menu">
       <div class="row spacer">
       </div>
       <div class="row" id="table-head">
             <div class="col-md-4">Service name</div>
-            <div class="col-md-2">Cost ($)</div>
-            <div class="col-md-3">Time (mins)</div>
+            <div class="col-md-2">Cost</div>
+            <div class="col-md-3">Time</div>
             <div class="col-md-3"></div>
       </div>
 
@@ -27,15 +30,63 @@
                     <%= service.service_name %>
                   </div>
                   <div class="col-md-2">
-                    <%= service.cost %>
+                    $<%= service.cost %>
                   </div>
                   <div class="col-md-3">
-                    <%= service.time %>
+                    <%= service.time %> minutes
                   </div>
-                 <div class="col-md-3">
+                  <div class="col-md-3">
+                   <button type="button" class="service-btn" data-toggle="modal" data-target="#myModal">See Details</button>
+                  </div>
+              </div>
+                  <!-- Modal -->
+                  <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div class="col-md-2">
+                              </div>
+                              <div class="col-md-8 main">
+                                <p class="show">
+                                  <strong>Service name:</strong>
+                                  <%= service.service_name %>
+                                </p>
+
+                                <p class="show">
+                                  <strong>Cost:</strong>
+                                  $<%= service.cost %>
+                                </p>
+
+                                <p class="show">
+                                  <strong>Time:</strong>
+                                  <%= service.time %> minutes
+                                </p>
+
+                                <p class="show">
+                                  <strong>Description:</strong>
+                                  <%= service.description %>
+                                </p>
+                              </div>
+                              <div class="col-md-2">
+                              </div>
+                            </div>
+                          </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
                   <%= link_to 'See Details', service %>
                 </div>
-              </div>
           <% end %>
         
       <div class="row spacer">

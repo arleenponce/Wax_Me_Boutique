@@ -24,7 +24,7 @@ class ServicesController < ApplicationController
 
   def spray_tan
        @tan_services = Service.where(:service_type => 'Spray Tan')
-       render '/services/spray-tan'
+       render '/services/spray-tans'
   end
 
   def specials
@@ -33,19 +33,6 @@ class ServicesController < ApplicationController
   end
 
 
-  #   @skin_services = []
-  #   @services = Service.all 
-  #   end
-
-  #     @services.find_each do |service|
-  #       if service.service_type = "Skin Care"
-  #         @skin_services << service
-  #     end
-  #   end
-  #     render '/services/skin-care'
-  # end
-
-  # GET /services/new
   def new
     @service = Service.new
   end

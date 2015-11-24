@@ -1,36 +1,52 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Skin Care</h1>
+<body>
+<!--   <div class="row spacer">
+  </div> -->
+  <div class="row">
+   <div class="col-md-1">
+   </div>
+   <div class="col-md-4">
+      <h1 id="title">Spray Tans</h1>
+      <p>For our spray tans, we quickly apply a fine mist containing dihydroxyacetone (DHA) using a spray gun created for sunless tanning. DHA is a food-derived ingredient, which has been approved by the FDA for external cosmetics applications and it's considered non-toxic and non-carcinogenic.
+ 
+When the solution is applied, it reacts with the amino acids in the outer layer of the skin cells, producing a natural-looking tan. The effect of DHA usually appears within an hour of application of the solution. Maximum color results may take anywhere from 6-8 hours to develop.</p>
+    </div>
+    <div class="col-md-6 menu">
+      <div class="row spacer">
+      </div>
+      <div class="row" id="table-head">
+            <div class="col-md-4">Service name</div>
+            <div class="col-md-2">Cost</div>
+            <div class="col-md-3">Time</div>
+            <div class="col-md-3"></div>
+      </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Service name</th>
-      <th>Cost ($)</th>
-      <th>Time (mins)</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    
-    <% @skin_services.each do |service| %>
-    
-      <tr>
-        <td><%= service.service_name %></td>
-        <td><%= service.cost %></td>
-        <td><%= service.time %></td>
-        <td><%= service.description %></td>
-        <td><%= link_to 'Show', service %></td>
-        <td><%= link_to 'Edit', edit_service_path(service) %></td>
-        <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Service', new_service_path %>
+      <!-- <div class="row" id="table-body"> -->
+          
+          <% @tan_services.each do |service| %>
+              <div class="row" id="table-row">
+                  <div class="col-md-4">
+                    <%= service.service_name %>
+                  </div>
+                  <div class="col-md-2">
+                    $<%= service.cost %>
+                  </div>
+                  <div class="col-md-3">
+                    <%= service.time %> minutes
+                  </div>
+                 <div class="col-md-3">
+                  <%= link_to 'See Details', service %>
+                </div>
+              </div>
+          <% end %>
+        
+      <div class="row spacer">
+      </div>
+    </div>
+    <div class="col-md-1">
+   </div>
+  </div>
+  <div class="row spacer">
+  </div>
+</body>

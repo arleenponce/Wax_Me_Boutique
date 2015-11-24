@@ -1,28 +1,50 @@
 <p id="notice"><%= notice %></p>
+<div class="row spacer">
+</div>
+<div class="row spacer">
+</div>
+<div class="row spacer">
+</div>
+<div class="row">
+	<div class="col-md-2">
+	</div>
+	<div class="col-md-8 main">
+		<p class="show">
+		  <strong>Service name:</strong>
+		  <%= @service.service_name %>
+		</p>
 
-<p>
-  <strong>Service name:</strong>
-  <%= @service.service_name %>
-</p>
+		<p class="show">
+		  <strong>Cost:</strong>
+		  $<%= @service.cost %>
+		</p>
 
-<p>
-  <strong>Cost:</strong>
-  $<%= @service.cost %>
-</p>
+		<p class="show">
+		  <strong>Time:</strong>
+		  <%= @service.time %> minutes
+		</p>
 
-<p>
-  <strong>Time:</strong>
-  <%= @service.time %> minutes
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @service.description %>
-</p>
-
-<% if admin_signed_in? %>
-<%= link_to 'Edit', edit_service_path(@service) %> |
-<%= link_to 'Back', services_path %>
-<% else %>
-<%= link_to 'Back', services_path %>
-<% end %>
+		<p class="show">
+		  <strong>Description:</strong>
+		  <%= @service.description %>
+		</p>
+	</div>
+	<div class="col-md-2">
+	</div>
+</div>
+<div class="row spacer">
+</div>
+<div clas="row">
+	<div class="col-md-2">
+	</div>
+	<div class="col-md-8">
+		<% if admin_signed_in? %>
+		<button type="button" onclick="location.href='/services/<%= @service.id %>/edit'" class="service-btn">Edit</button>
+		<button type="button" onclick="location.href='/services'" class="service-btn">All Services</button>
+		<% else %>
+		<button type="button" onclick="location.href='/services'" class="service-btn">All Services</button>
+		<% end %>
+	</div>
+	<div class="col-md-2">
+	</div>
+</div>

@@ -1,36 +1,56 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Waxing Services</h1>
+<body>
+<!--   <div class="row spacer">
+  </div> -->
+  <div class="row">
+   <div class="col-md-1">
+   </div>
+   <div class="col-md-4">
+      <h1 id="title">Waxing</h1>
+      <p> Save money when you choose waxing over shaving. With the increasing costs of razors and blades, wouldn't it be nice to not have to worry about buying them anymore? Switch to waxing and be amazed at how much money you can save.
+ 
+      Waxing is also much safer than shaving because you're avoiding the risk of nicks, cuts, ingrown hairs, and razor burn that comes with shaving.
+       
+      Worry about body hair less often! Waxing removes hair from the root so hair takes longer to grow back. Depending on the body part being waxed and your growth pattern, our waxes can last anywhere from 4 to 8 weeks.
+       
+      Have sensitive skin? No problem! Our wax is perfect for sensitive skin! Other methods such as shaving or hair removal creams can be harsh and cause reactions for sensitive skin. Our wax is made from all-natural ingredients like pine resin and beeswax and is always applied at body temperature so you will get premium hair removal without paying the harsh price of skin reactions.</p>
+    </div>
+    <div class="col-md-6 menu">
+      <div class="row spacer">
+      </div>
+      <div class="row" id="table-head">
+            <div class="col-md-4">Service name</div>
+            <div class="col-md-2">Cost</div>
+            <div class="col-md-3">Time</div>
+            <div class="col-md-3"></div>
+      </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Service name</th>
-      <th>Cost ($)</th>
-      <th>Time (mins)</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    
-    <% @wax_services.each do |service| %>
-    
-      <tr>
-        <td><%= service.service_name %></td>
-        <td><%= service.cost %></td>
-        <td><%= service.time %></td>
-        <td><%= service.description %></td>
-        <td><%= link_to 'Show', service %></td>
-        <td><%= link_to 'Edit', edit_service_path(service) %></td>
-        <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Service', new_service_path %>
+      <!-- <div class="row" id="table-body"> -->
+          
+          <% @wax_services.each do |service| %>
+              <div class="row" id="table-row">
+                  <div class="col-md-4">
+                    <%= service.service_name %>
+                  </div>
+                  <div class="col-md-2">
+                    $<%= service.cost %>
+                  </div>
+                  <div class="col-md-3">
+                    <%= service.time %> minutes
+                  </div>
+                 <div class="col-md-3">
+                  <%= link_to 'See Details', service %>
+                </div>
+              </div>
+          <% end %>
+        
+      <div class="row spacer">
+      </div>
+    </div>
+    <div class="col-md-1">
+   </div>
+  </div>
+  <div class="row spacer">
+  </div>
+</body>

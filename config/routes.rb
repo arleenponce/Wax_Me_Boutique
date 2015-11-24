@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   root :to => "home#index"
   match('services/waxing', {:via => :get, :to => "services#waxing"})
   match('services/skin-care', {:via => :get, :to => "services#skin_care"})
+  match('services/waxing', {:via => :get, :to => "services#waxing"})
+  match('services/spray-tan', {:via => :get, :to => "services#spray_tan"})
 
   resources :services
   # The priority is based upon order of creation: first created -> highest priority.
