@@ -1,10 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+<body>
 <div class="row">
     <div class="col-md-1">
     </div>
     <div class="col-md-4">
-      <h1 id="pg_title">All Services</h1>
+      <h1 id="admin">Manage Services</h1>
     </div>
     <div class="col-md-4">
     </div>
@@ -40,7 +41,7 @@
           </div>
   </div>
 
-    <% @services.each do |service| %>
+    <% @services.sort.each do |service| %>
     <div class="row">
         <div class="col-md-1 tb">
           <%= service.service_type %>
@@ -60,7 +61,7 @@
         <div class="col-md-2 tb">
           <button type="button" onclick="location.href='/services/<%= service.id %>'" class="service-btn">View</button>
           <button type="button" onclick="location.href='/services/<%= service.id %>/edit'" class="service-btn">Edit</button>
-          <%= button_to 'Remove', service, method: :delete, data: { confirm: 'Are you sure?', :class => "remove" } %>
+          <%= button_to 'Remove', service, method: :delete, data: { confirm: 'Are you sure you want to remove this service?', :class => "remove" } %>
         </div>
     </div>
     <div class="row list_spacer">
@@ -73,3 +74,4 @@
   </div>
 </div>
 <br>
+</body>

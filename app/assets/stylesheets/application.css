@@ -18,8 +18,9 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 
 body {
-	background: url(green_bckgrd.jpg) no-repeat;
-	background-size: cover;
+	background: url(facial_3.jpg) no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
 }
 
 .spacer {
@@ -39,25 +40,26 @@ body {
 .menu {
 	background-color: rgba(255,255,255,.6);
 	border-radius: 30px;
-	height: 1000px;
+	padding: 2em;
+	height: 600em;
 }
 
 h1#title {
 	font-family:'FontAwesome';
-	font-size: 6em;
-	padding-top: .5em;
-	color: white;
+	font-size: 4em;
+	/*padding-top: .5em;*/
 	font-weight: bold;
+	color: rgba(114, 114, 64, .7);
 }
 
 div#table-head {
-	font-size: 1.8em;
+	font-size: 1.4em;
 	font-weight: bold;
 	padding-bottom: .4em
 }
 
 div#table-row {
-	font-size: 1.4em;
+	font-size: 1.2em;
 	padding-bottom: .2em
 }
 
@@ -161,62 +163,53 @@ p#notice {
 	height: 5em;
 	width: 8em;
 	border-radius: 10px;
-	background-color: rgba(179,184,152,1);
+	background: rgba(167, 168, 99, 1);
 	color: white;
-	font-weight: bold;
 	font-size: 1.5em;
 	margin-bottom: 1em;
 }
 
 .admin-btn:hover, .service-btn:hover, input:hover, .nav-btn:hover, textarea:hover, .select-style:hover select:hover {
+	background-color: white;
+	color: rgba(167, 168, 99, 1);
 	opacity: .7;
 }
 
 .service-btn {
 	border-radius: 10px;
-	background-color: rgba(179,184,152,1);
+	background: rgba(167, 168, 99, 1);
 	color: white;
-	font-weight: bold;
 	margin-bottom: 1em;
+	width: 4em;
 }
 
 input {
 	border-radius: 10px;
-	background-color: rgba(179,184,152,1);
+	background: rgba(167, 168, 99, 1);
 	color: white;
-	font-weight: bold;
 	margin-bottom: 1em;
 	width: 8em;
 }
 
 .nav-btn {
-	height: 4em;
+	height: 3em;
 	width: 8em;
+	color: white;
 	border-radius: 10px;
-	background-color: rgba(179,184,152,.8);
-	font-weight: bold;
+	background: rgba(167, 168, 99, 1);
 	margin-bottom: 10px;
 }
 
 .main {
-	background-color: rgba(179,184,152,.5);
+	background-color: rgba(255,255,255,.6);
 	border-radius: 30px;
-	padding: 2em;
-	border: solid black 1px;
+	padding: 1.5em;
+	height: 100%;
 }
 
 #pg_title {
 	font-weight: bold;
 	color: black;
-}
-
-td {
-	padding: 10px;
-	font-size: 1.2em;
-}
-
-th {
-	font-size: 1.3em;
 }
 
 input.form_field {
@@ -249,9 +242,20 @@ textarea {
 }
 
 .th {
-	font-size: 1.5em;
-	margin-bottom: 10px;
+	font-size: 1.3em;
+	margin-bottom: 20px;
 	font-weight: bold;
+	margin-top: 20px;
 }
 
+.tb {
+	padding: 10px;
+	font-size: 1em;
+
+}
+
+p {
+	/*color: rgb(114, 114, 64)*/
+	/*font-weight: bold;*/
+}
 

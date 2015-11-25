@@ -10,7 +10,7 @@
 /*ARLEEN EDITS*/
 
 .darktext {
-	color: #527c50;
+	color: rgba(167, 168, 99, 1);
 	font-weight: bold;
 }
 
@@ -18,7 +18,9 @@
 /* Basic */
 
 	body {
-		background: #C4D07C;
+		background: url(../images/leg_wax.jpg) no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
 	}
 
 		body.loading * {
@@ -370,7 +372,7 @@
 			display: inline-block;
 			padding-right: 1em;
 			font-size: 1.4em;
-			color: #527c50;
+			background: rgba(167, 168, 99, 1);
 		}
 
 		ul.special-icons p {
@@ -489,7 +491,7 @@
 		}
 
 		.wrapper.style2 {
-			background: #EFF6C4;
+			background: rgba(167, 168, 99, .5);
 		}
 
 			.wrapper.style2 .major {
@@ -525,9 +527,9 @@
 
 		.wrapper.style3 {
 			padding-bottom: 6em;
-			background: #BECB7D;
+			background: rgba(255, 255, 255, .1);
 			text-align: center;
-			color: white;
+			color: black;
 		}
 
 			.wrapper.style3 .container {
@@ -540,7 +542,7 @@
 			}
 
 		.wrapper.style4 {
-			background: #CACFB3;
+			background: rgba(167, 168, 99, .8);
 		}
 
 		.wrapper.style5 {
@@ -696,7 +698,6 @@
 		#banner h2 {
 			display: inline-block;
 			padding: 0.50em 0.30em;
-			background: rgba(167, 168, 99, .7);
 			font-size: 3em;
 			font-weight: 400;
 		}
@@ -744,9 +745,9 @@
 	#footer {
 		padding: 6em 0 2em 0;
 		text-align: center;
-		color: #527c50
+		color: rgba(167, 168, 99, 1);
 		font-weight: bold;
-		background-color: #D8DFAA;
+		background-color: white;
 	}
 
 		#footer hr {
@@ -761,7 +762,7 @@
 
 		#footer .major .byline {
 			color: inherit;
-			opacity: .4;
+			opacity: .8;
 		}
 
 		#footer .copyright {

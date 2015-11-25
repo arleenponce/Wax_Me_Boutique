@@ -1,6 +1,7 @@
 $(document).ready(function() {
 $('.carousel').carousel({
   interval: 2000
+})
 // })
 // var scroller = $('#scroller div.innerScrollArea');
 //         var scrollerContent = scroller.children('ul');

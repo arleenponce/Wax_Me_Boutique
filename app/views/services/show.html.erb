@@ -39,10 +39,8 @@
 	</div>
 	<div class="col-md-8">
 		<% if admin_signed_in? %>
-		<button type="button" onclick="location.href='/services/<%= @service.id %>/edit'" class="service-btn">Edit</button>
-		<button type="button" onclick="location.href='/services'" class="service-btn">All Services</button>
-		<% else %>
-		<button type="button" onclick="location.href='/services'" class="service-btn">All Services</button>
+		<button type="button" onclick="location.href='/services/<%= @service.id %>/edit'" class="nav-btn">Edit</button>
+		<button type="button" onclick="location.href='/services'" class="nav-btn">All Services</button>
 		<% end %>
 	</div>
 	<div class="col-md-2">
