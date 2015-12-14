@@ -48,20 +48,16 @@
                       <!-- Modal content-->
                       <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Modal Header</h4>
+                            <button type="button" class="btn close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title"><%= service.service_name %></h4>
                           </div>
                           <div class="modal-body">
                             <div class="row">
                               <div class="col-md-2">
                               </div>
-                              <div class="col-md-8 main">
+                              <div class="col-md-8 ">
                                 <p class="show">
-                                  <strong>Service name:</strong>
-                                  <%= service.service_name %>
-                                </p>
-
-                                <p class="show">
+                                  <br>
                                   <strong>Cost:</strong>
                                   $<%= service.cost %>
                                 </p>
@@ -81,13 +77,13 @@
                             </div>
                           </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button type="button" class="service-btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                       </div>
 
                     </div>
                   </div>
-                  <%= link_to 'See Details', service %>
+                  
                 </div>
           <% end %>
         </div>

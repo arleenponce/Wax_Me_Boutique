@@ -38,7 +38,7 @@ body {
 }
 
 .menu {
-	background-color: rgba(255,255,255,.6);
+	background-color: rgba(255,255,255,.7);
 	border-radius: 30px;
 	padding: 2em;
 	height: 600em;
@@ -75,6 +75,7 @@ p#notice {
 		background: rgba(167, 168, 99, .7);
 		width: 100%;
 		position: fixed;
+		z-index: 1;
 	}
 
 	.homepage #nav {
@@ -123,6 +124,25 @@ p#notice {
 					display: none;
 				}
 
+				input.call {
+					color: white;
+					background-color: rgba(130, 180, 64, .5);
+					border: solid rgba(255,255,255, 0.3) 2px;
+					font-size: 1.5em;
+					font-weight: bold;
+					font-family: 'Open Sans', sans-serif;
+					margin-left: 100px;
+					line-height: 2.8em;
+					padding: 0 20px 0;
+					transition: all .75s ease-in-out;
+				}
+
+				input.call:hover {
+					border: solid rgba(255,255,255, .6) 2px;
+					background-color: rgba(130, 180, 64, 1);
+				}
+
+
 /* Dropotron */
 
 	.dropotron {
@@ -163,13 +183,13 @@ p#notice {
 	height: 5em;
 	width: 8em;
 	border-radius: 10px;
-	background: rgba(167, 168, 99, 1);
+	background: rgba(222, 58, 121, 1);
 	color: white;
 	font-size: 1.5em;
 	margin-bottom: 1em;
 }
 
-.admin-btn:hover, .service-btn:hover, input:hover, .nav-btn:hover, textarea:hover, .select-style:hover select:hover {
+.admin-btn:hover, .service-btn:hover, input.admin-btn:hover, .nav-btn:hover, textarea:hover, .select-style:hover select:hover {
 	background-color: white;
 	color: rgba(167, 168, 99, 1);
 	opacity: .7;
@@ -183,7 +203,7 @@ p#notice {
 	width: 4em;
 }
 
-input {
+input.admin-btn {
 	border-radius: 10px;
 	background: rgba(167, 168, 99, 1);
 	color: white;
@@ -192,8 +212,8 @@ input {
 }
 
 .nav-btn {
-	height: 3em;
-	width: 8em;
+	height: 2em;
+	width: 7em;
 	color: white;
 	border-radius: 10px;
 	background: rgba(167, 168, 99, 1);
@@ -201,10 +221,12 @@ input {
 }
 
 .main {
-	background-color: rgba(255,255,255,.6);
+	background-color: rgba(255,255,255,.7);
 	border-radius: 30px;
 	padding: 1.5em;
 	height: 100%;
+	width: auto;
+	margin: auto;
 }
 
 #pg_title {
@@ -224,7 +246,8 @@ input.form_field {
 
 textarea {
 	height: 12em;
-	width: 60em;
+	width: 50em;
+	margin-right: 1em;
 	font-size: 1em;
 	border: solid black 1px;
 }
@@ -254,8 +277,17 @@ textarea {
 
 }
 
-p {
-	/*color: rgb(114, 114, 64)*/
-	/*font-weight: bold;*/
+.modal-header {
+	background: rgba(167, 168, 99, 1);
+	color: white;
 }
 
+.modal-body, .modal-footer {
+	background: rgba(167, 168, 99, .2);
+	/*color: white;*/
+}
+
+.modal-btn {
+	background-color: rgba(222, 58, 121, .6);
+	color: white;
+}

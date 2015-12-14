@@ -1,4 +1,5 @@
 class ServicesController < ApplicationController
+  respond_to :html, :json
   before_action :set_service, only: [:show, :edit, :update, :destroy]
   # before_action :authenticate_user!, except: [:show]
   # GET /services
@@ -45,6 +46,7 @@ class ServicesController < ApplicationController
   # POST /services.json
   def create
     @service = Service.new(service_params)
+    respond_with @service
 
     respond_to do |format|
       if @service.save
@@ -81,6 +83,13 @@ class ServicesController < ApplicationController
     end
 
     
+  end
+
+  def show_specials
+    @special = Service.all.sample
+    respond_to do |format|
+    format.json { render :show, status: :ok, location: @special }
+    end
   end
 
   private

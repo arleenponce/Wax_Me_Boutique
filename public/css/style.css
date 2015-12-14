@@ -18,7 +18,7 @@
 /* Basic */
 
 	body {
-		background: url(../images/leg_wax.jpg) no-repeat;
+		background: url(../images/facial_5.jpg) no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
 	}
@@ -485,7 +485,7 @@
 
 		.wrapper.style1 {
 			padding: 0em;
-			background: url(../images/facial.jpg) no-repeat;
+			/*background: url(../images/facial.jpg) no-repeat;*/
 			background-size: cover;
 			height: 35em;
 		}
@@ -572,6 +572,7 @@
 		background: rgba(167, 168, 99, .7);
 		width: 100%;
 		position: fixed;
+		z-index: 1;
 	}
 
 		#header .container {
@@ -615,7 +616,9 @@
 	}
 
 		#nav > ul {
-			margin: 0;
+			margin-left: 10%;
+			margin-right: 0;
+			padding-right: 0;
 		}
 
 			#nav > ul > li {
@@ -623,6 +626,10 @@
 				display: inline-block;
 				margin-left: 0.5em;
 				padding: 0 0.5em;
+			}
+
+			#nav > ul > li:hover {
+				background-color: rgba(255,255,255, 0.2);
 			}
 
 				#nav > ul > li a {
@@ -645,6 +652,20 @@
 
 				#nav > ul > li > ul {
 					display: none;
+				}
+
+				input.call {
+					color: white;
+					background-color: rgba(130, 180, 64, .5);
+					border: solid rgba(255,255,255, 0.3) 2px;
+					font-size: 1.3em;
+					font-weight: bold;
+					margin-left: 100px;
+					transition: all .75s ease-in-out;
+				}
+
+				input.call:hover {
+					border: solid rgba(255,255,255, .6) 2px;
 				}
 
 /* Dropotron */
@@ -684,12 +705,21 @@
 /* Banner */
 
 	#banner {
-		padding: 12em 0em 3em 0em;
+		padding: 55px 0 0;
 		text-align: center;
 		text-transform: uppercase;
 		color: white;
 	}
-
+#bannerLogo {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 2;
+}	
+#banner .carousel-inner img{
+	width: 100%;
+	height: 500px;
+}
 		#banner .container {
 			padding: 0em 8em;
 

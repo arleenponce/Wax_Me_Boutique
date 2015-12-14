@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  match '/services/show_specials', {:via => :get, :to => "services#show_specials"}
+
   devise_for :admins
   
   root :to => "home#index"

@@ -11,6 +11,10 @@
 // about supported directives.
 //
 //= require jquery
+//= require skel.min
+//= require skel-layers.min
+//= require init
+//= require jquery.dropotron.min
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
