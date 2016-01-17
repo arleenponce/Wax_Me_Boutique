@@ -1,0 +1,98 @@
+<p id="notice"><%= notice %></p>
+
+<div class="body facial">
+<!--   <div class="row spacer">
+  </div> -->
+  <div class="row">
+   <div class="col-md-1">
+   </div>
+   <div class="col-md-4">
+   </div>
+   <div class="col-md-6 menu">
+      <h1 id="title">PCA Skin Chemical Peels</h1>
+      <p>PCA Skin professional products are scientifically formulated to gently stimulate, firm, and tighten skin. PCA Skin treatments are carefully blended to remove dull, damaged surface layers without the downtime often associated with chemical peels. These treatments increase the natural skin cell turnover resulting in healthy, beautiful skin. These superficial peels will result in little to no downtime. Most clients find it unnecessary to apply makeup, as the skin will be smooth, dewy, and radiant following their treatment. Progressive, not aggressive, is the philosophy.
+ 
+TCA (Trichloroacetic acid) peels: Exceptional for the treatment of aging skin, fine lines and wrinkles, hyperpigmentation, dehydration, and acne, especially in dry skin. TCA peels are often thought of as very aggressive and producing substantial discomfort. PCA Professional™ TCA peels are very different from the standard. Our TCA solutions are blends formulated with many ingredients including lactic acid, ascorbic acid (vitamin C), plumping phyto hormones, and kojic and azelaic acids to produce dramatic results without the discomfort and downtime associated with traditional TCA peels.</p>
+    
+    
+      <div class="row spacer">
+      </div>
+      <div class="row" id="table-head">
+            <div class="col-md-4">Service name</div>
+            <div class="col-md-2">Cost</div>
+            <div class="col-md-3">Time</div>
+            <div class="col-md-3"></div>
+      </div>
+
+      <!-- <div class="row" id="table-body"> -->
+          
+          <% @chemical_peels.each do |service| %>
+              <div class="row" id="table-row">
+                  <div class="col-md-4">
+                    <%= service.service_name %>
+                  </div>
+                  <div class="col-md-2">
+                    $<%= service.cost %>
+                  </div>
+                  <div class="col-md-3">
+                    <%= service.time %> minutes
+                  </div>
+                  <div class="col-md-3">
+                   <button type="button" class="nav-btn" data-toggle="modal" data-target="#modal-<%= service.id %>">See Details</button>
+                  </div>
+              
+                  <!-- Modal -->
+                  <div id="modal-<%= service.id %>" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title"><%= service.service_name %></h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div class="col-md-2">
+                              </div>
+                              <div class="col-md-8 ">
+                                <p class="show">
+                                  <br>
+                                  <strong>Cost:</strong>
+                                  $<%= service.cost %>
+                                </p>
+
+                                <p class="show">
+                                  <strong>Time:</strong>
+                                  <%= service.time %> minutes
+                                </p>
+
+                                <p class="show">
+                                  <strong>Description:</strong>
+                                  <%= service.description %>
+                                </p>
+                              </div>
+                              <div class="col-md-2">
+                              </div>
+                            </div>
+                          </div>
+                        <div class="modal-footer">
+                          <button type="button" class="service-btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  
+                </div>
+          <% end %>
+        </div>
+      <div class="row spacer">
+      </div>
+    </div>
+    <div class="col-md-1">
+   </div>
+  </div>
+  <div class="row spacer">
+  </div>
+</body>

@@ -1,0 +1,102 @@
+<p id="notice"><%= notice %></p>
+
+<div class="body wax_women">
+<!--   <div class="row spacer">
+  </div> -->
+  <div class="row">
+   <div class="col-md-1">
+   </div>
+   <div class="col-md-4">
+   </div>
+   <div class="col-md-6 menu">
+      <h1 id="title">Waxing For Women - Face</h1>
+      <p>Save money when you choose waxing over shaving. With the increasing costs of razors and blades, wouldn't it be nice to not have to worry about buying them anymore? Switch to waxing and be amazed at how much money you can save.
+ 
+      Waxing is also much safer than shaving because you're avoiding the risk of nicks, cuts, ingrown hairs, and razor burn that comes with shaving.
+       
+      Worry about body hair less often! Waxing removes hair from the root so hair takes longer to grow back. Depending on the body part being waxed and your growth pattern, our waxes can last anywhere from 4 to 8 weeks.
+       
+      Have sensitive skin? No problem! Our wax is perfect for sensitive skin! Other methods such as shaving or hair removal creams can be harsh and cause reactions for sensitive skin. Our wax is made from all-natural ingredients like pine resin and beeswax and is always applied at body temperature so you will get premium hair removal without paying the harsh price of skin reactions.</p>
+    
+    
+      <div class="row spacer">
+      </div>
+      <div class="row" id="table-head">
+            <div class="col-md-4">Service name</div>
+            <div class="col-md-2">Cost</div>
+            <div class="col-md-3">Time</div>
+            <div class="col-md-3"></div>
+      </div>
+
+      <!-- <div class="row" id="table-body"> -->
+          
+          <% @wax_women_face.each do |service| %>
+              <div class="row" id="table-row">
+                  <div class="col-md-4">
+                    <%= service.service_name %>
+                  </div>
+                  <div class="col-md-2">
+                    $<%= service.cost %>
+                  </div>
+                  <div class="col-md-3">
+                    <%= service.time %>
+                  </div>
+                  <div class="col-md-3">
+                   <button type="button" class="nav-btn" data-toggle="modal" data-target="#modal-<%= service.id %>">See Details</button>
+                  </div>
+              
+                  <!-- Modal -->
+                  <div id="modal-<%= service.id %>" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title"><%= service.service_name %></h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div class="col-md-2">
+                              </div>
+                              <div class="col-md-8 ">
+                                <p class="show">
+                                  <br>
+                                  <strong>Cost:</strong>
+                                  $<%= service.cost %>
+                                </p>
+
+                                <p class="show">
+                                  <strong>Time:</strong>
+                                  <%= service.time %> minutes
+                                </p>
+
+                                <p class="show">
+                                  <strong>Description:</strong>
+                                  <%= service.description %>
+                                </p>
+                              </div>
+                              <div class="col-md-2">
+                              </div>
+                            </div>
+                          </div>
+                        <div class="modal-footer">
+                          <button type="button" class="service-btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  
+                </div>
+          <% end %>
+        </div>
+      <div class="row spacer">
+      </div>
+    </div>
+    <div class="col-md-1">
+   </div>
+  </div>
+  <div class="row spacer">
+  </div>
+</body>

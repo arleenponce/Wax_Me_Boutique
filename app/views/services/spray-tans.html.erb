@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<body>
+<div class="spray_tan">
 <!--   <div class="row spacer">
   </div> -->
   <div class="row">
@@ -10,9 +10,25 @@
    </div>
    <div class="col-md-6 menu">
       <h1 id="title">Spray Tan</h1>
-      <p>For our spray tans, we quickly apply a fine mist containing dihydroxyacetone (DHA) using a spray gun created for sunless tanning. DHA is a food-derived ingredient, which has been approved by the FDA for external cosmetics applications and it's considered non-toxic and non-carcinogenic.
- 
-      When the solution is applied, it reacts with the amino acids in the outer layer of the skin cells, producing a natural-looking tan. The effect of DHA usually appears within an hour of application of the solution. Maximum color results may take anywhere from 6-8 hours to develop.</p>
+      <p>The result will last about a week but varies with each individual depending on their personal skin renewal cycle. The application takes about 10 to 15 minutes and drying time of 5 minutes.</p>
+       
+      <ul class="spray-tan">
+      <strong>Before your spray tanning session:</strong>
+          <li>EXFOLIATE and WAX all areas to be tanned before each session. Pay special attention to your knees, ankles, feet, elbows, and knuckles.</li>
+          <li>Getting rid of dead skin before tanning will extend the life of the tan. If you don’t exfoliate properly, the tan will start to flake off within 24 hours.</li>
+          <li>No lotions, perfumes, body oils, make up, moisturizers, or sunscreens.</li>
+          <li>Wear loose-fitting clothes, preferably dark colors.</li>
+          <li>You may tan in the garment of your choice. Topless is fine as well as nude. Whatever you are comfortable with.</li>
+      </ul>
+      <ul class="spray-tan">
+      <strong>After your spray tanning session:</strong>
+          <li>Wait 6 to 8 hours before you shower. This will allow the solution to fully develop in the skin. The longer you wait to shower the better results.</li>
+          <li>Moisturize the entire body, preferably twice a daily for at least one week.</li>
+          <li>Avoid exfoliating the skin.</li>
+          <li>Avoid long hot showers, hot tubs, and Jacuzzis. They speed up the exfoliation process.</li>
+          <li>Avoid exercising immediately after your tanning session. Sweating will shorten life of your tan.</li>
+          <li>Always apply sunscreen when exposed to the sun.</li>
+      </ul>
     
       <div class="row spacer">
       </div>
@@ -37,11 +53,11 @@
                     <%= service.time %> minutes
                   </div>
                  <div class="col-md-3">
-                  <button type="button" class="nav-btn" data-toggle="modal" data-target="#myModal">See Details</button>
+                  <button type="button" class="nav-btn" data-toggle="modal" data-target="#modal-<%= service.id %>">See Details</button>
                 </div>
 
                 <!-- Modal -->
-                  <div id="myModal" class="modal fade" role="dialog">
+                  <div id="modal-<%= service.id %>" class="modal fade" role="dialog">
                     <div class="modal-dialog">
 
                       <!-- Modal content-->

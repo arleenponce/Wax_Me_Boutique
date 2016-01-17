@@ -1,51 +1,57 @@
-<p id="notice"><%= notice %></p>
-<div class="row spacer">
-</div>
-<div class="row spacer">
-</div>
-<div class="row spacer">
-</div>
-<div class="container">
-	<div class="row">
+<div class="body admin">
+	<p id="notice"><%= notice %></p>
+	<div class="row spacer">
+	</div>
+	<div class="row spacer">
+	</div>
+	<div class="row spacer">
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+			</div>
+			
+			<div class="col-md-8 main">
+				<br>
+				<p class="show">
+				  <strong>Service name:</strong>
+				  <%= @service.service_name %>
+				</p>
+
+				<p class="show">
+				  <strong>Cost:</strong>
+				  $<%= @service.cost %>
+				</p>
+
+				<p class="show">
+				  <strong>Time:</strong>
+				  <%= @service.time %>
+				</p>
+
+				<p class="show">
+				  <strong>Description:</strong>
+				  <%= @service.description %>
+				</p>
+			</div>
+			<div class="col-md-2">
+			</div>
+	</div>
+	</div>
+	<div class="row spacer">
+	</div>
+	<div clas="row">
 		<div class="col-md-2">
 		</div>
-		
-		<div class="col-md-8 main">
-			<p class="show">
-			  <strong>Service name:</strong>
-			  <%= @service.service_name %>
-			</p>
-
-			<p class="show">
-			  <strong>Cost:</strong>
-			  $<%= @service.cost %>
-			</p>
-
-			<p class="show">
-			  <strong>Time:</strong>
-			  <%= @service.time %> minutes
-			</p>
-
-			<p class="show">
-			  <strong>Description:</strong>
-			  <%= @service.description %>
-			</p>
+		<div class="col-md-8">
+			<% if admin_signed_in? %>
+			<button type="button" onclick="location.href='/services/<%= @service.id %>/edit'" class="nav-btn">Edit</button>
+			<button type="button" onclick="location.href='/services'" class="nav-btn">See All</button>
+			<button type="button" onclick="location.href='/services/new'"class="nav-btn">Add</button>
+			<% end %>
 		</div>
 		<div class="col-md-2">
 		</div>
-</div>
-</div>
-<div class="row spacer">
-</div>
-<div clas="row">
-	<div class="col-md-2">
 	</div>
-	<div class="col-md-8">
-		<% if admin_signed_in? %>
-		<button type="button" onclick="location.href='/services/<%= @service.id %>/edit'" class="nav-btn">Edit</button>
-		<button type="button" onclick="location.href='/services'" class="nav-btn">See All</button>
-		<% end %>
-	</div>
-	<div class="col-md-2">
+	<div id="full_page">
 	</div>
 </div>

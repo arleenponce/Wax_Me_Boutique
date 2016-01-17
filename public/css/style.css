@@ -9,9 +9,138 @@
 
 /*ARLEEN EDITS*/
 
+.carousel-image {
+	height: 3000px;
+	width: auto;
+	overflow: hidden;
+}
+
+.brand-img {
+	float: left;
+	padding: 15px 10px 0px 0px;
+	margin-left: 0px;
+
+}
+
 .darktext {
+	color: white;
+	font-weight: bold;
+}
+
+.specials {
+	background-color: rgba(255,255,255,.4);
+	border-radius: 15px;
+}
+
+.style3 {
+	height: 550px;
+}
+
+.fa-chevron-left {
+	margin-top: 100%;
+}
+
+.fa-chevron-right {
+	margin-top: 100%;
+}
+
+/*.left-bar {
+	background-color: rgba(255,255,255,.8);
+	height: 600px;
+	margin-top: 25px;
 	color: rgba(167, 168, 99, 1);
 	font-weight: bold;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: right;
+}*/
+div.spacer {
+	height: 50px;
+}
+div.contact-info {
+	height: 600px;
+	padding: 0px;
+	margin: 0px;
+	top: 1000px;
+}
+
+div.green {
+	background-color: rgba(167, 168, 99, .5);
+	height: 600px;
+	padding: 0px;
+	margin: 0px;
+}
+
+div.white {
+	background-color: rgba(255,255,255,.5);
+	height: 200px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.picture1 {
+	/*background: url("/images/wax.jpg") no-repeat;*/
+	/*background-size: cover;*/
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	margin-left: -15px;
+}
+
+.picture2 {
+	/*background: url("/images/bronze.jpg") no-repeat;
+	background-size: cover;*/
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	margin-left: -15px;
+}
+
+.picture3 {
+	/*background: url("/images/smiling.jpg") no-repeat;
+	background-size: cover;*/
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	margin-left: -15px;
+}
+
+div.info {
+	background-color: rgba(167, 168, 99, 1);
+	color: rgba(255,255,255,1);
+	height: 600px;
+	padding: 0px;
+}
+
+p.divinfo {
+	font-size: 1.2em !important ;
+	margin: 5px 0px 0px -35px;
+}
+
+a.divinfo:link {
+	color:white;
+}
+
+a.divinfo:visited {
+	color:white;
+}
+
+a.divinfo:hover {
+	color: rgba(255, 255, 255, .8);
+}
+
+h3.divtitle {
+	margin: -15px 0px 0px -35px;
+}
+
+.map {
+	margin-bottom: 25px;
+	height: 400px;
+}
+
+#googleMap{
+	border: solid 15px rgba(255, 255, 255, .8);
+	padding: 50px, 50px, 50px, 50px;
 }
 
 
@@ -120,18 +249,24 @@
 		padding-bottom: 3em;
 		text-align: center;
 		text-transform: uppercase;
+		font-weight: 400;
 	}
 
 		header.major h2 {
 			font-size: 2.6em;
-			font-weight: 700;
+		}
+
+		header.major h3 {
+			font-size: 2.2em;
+			font-weight: 1200;
 		}
 
 		header.major .byline {
 			display: block;
 			padding-top: 1em;
 			letter-spacing: 1px;
-			font-size: 1.4em;
+			font-size: 1.8em;
+			
 		}
 
 	footer > :last-child {
@@ -511,7 +646,7 @@
 				.wrapper.style2 .major .byline {
 					letter-spacing: normal;
 					line-height: 1.6em;
-					text-transform: capitalize;
+					text-transform: none;
 					font-size: 1.4em;
 				}
 
@@ -715,6 +850,8 @@
 	top: 5px;
 	left: 5px;
 	z-index: 2;
+	height: 175px;
+
 }	
 #banner .carousel-inner img{
 	width: 100%;

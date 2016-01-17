@@ -1,0 +1,107 @@
+<p id="notice"><%= notice %></p>
+
+<div class="body facial">
+<!--   <div class="row spacer">
+  </div> -->
+  <div class="row">
+   <div class="col-md-1">
+   </div>
+   <div class="col-md-4">
+   </div>
+   <div class="col-md-6 menu">
+      <h1 id="title">Advanced Treatments</h1>
+      <p>Diamond microdermabrasion is a simple, quick, painless, and non-invasive skin rejuvenation procedure using the tip of diamond. There are thousands of tiny diamonds on the tip to perform skin exfoliation. It gently removes the outermost layer of dead skin cells from the epidermis. You will see your skin looking glowing and fresh after the first treatment. There is no downtime, and you will absolutely get back to your daily routine immediately after the treatment. Microdermabrasion is a gentle solution for dry, rough skin texture, dull complexions, blotchy skin coloring, acne, clogged pores, and oily skin. We recommend a series of 3 or 6 treatments every two weeks for healthy, long-lasting results.
+ 
+Benefits of microdermabrasion:
+•  Reduces fines lines and wrinkles
+•  Evens out skin tone
+•  Reduces and prevents age spots
+•  Treats sun-damaged skin
+•  Reduces acne as well as acne scars
+•  Smoothens the skin
+•  Removes white heads and blackheads
+•  Brightens up the skin
+•  Tightens the skin and shrinks pores</p>
+    
+    
+      <div class="row spacer">
+      </div>
+      <div class="row" id="table-head">
+            <div class="col-md-4">Service name</div>
+            <div class="col-md-2">Cost</div>
+            <div class="col-md-3">Time</div>
+            <div class="col-md-3"></div>
+      </div>
+
+      <!-- <div class="row" id="table-body"> -->
+          
+          <% @advanced_treatment.each do |service| %>
+              <div class="row" id="table-row">
+                  <div class="col-md-4">
+                    <%= service.service_name %>
+                  </div>
+                  <div class="col-md-2">
+                    $<%= service.cost %>
+                  </div>
+                  <div class="col-md-3">
+                    <%= service.time %> minutes
+                  </div>
+                  <div class="col-md-3">
+                   <button type="button" class="nav-btn" data-toggle="modal" data-target="#modal-<%= service.id %>">See Details</button>
+                  </div>
+              
+                  <!-- Modal -->
+                  <div id="modal-<%= service.id %>" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title"><%= service.service_name %></h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div class="col-md-2">
+                              </div>
+                              <div class="col-md-8 ">
+                                <p class="show">
+                                  <br>
+                                  <strong>Cost:</strong>
+                                  $<%= service.cost %>
+                                </p>
+
+                                <p class="show">
+                                  <strong>Time:</strong>
+                                  <%= service.time %> minutes
+                                </p>
+
+                                <p class="show">
+                                  <strong>Description:</strong>
+                                  <%= service.description %>
+                                </p>
+                              </div>
+                              <div class="col-md-2">
+                              </div>
+                            </div>
+                          </div>
+                        <div class="modal-footer">
+                          <button type="button" class="service-btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  
+                </div>
+          <% end %>
+        </div>
+      <div class="row spacer">
+      </div>
+    </div>
+    <div class="col-md-1">
+   </div>
+  </div>
+  <div class="row spacer">
+  </div>
+</body>
