@@ -20,6 +20,7 @@
 		<script src="js/specials.js"></script>
 		<script src="js/instafeed.min.js"></script>
 		<script src="js/pull_instagram.js"></script>
+
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -109,37 +110,37 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="images/facial.jpg" class="carousel-image"/>
+      <div style="background-image: url(images/facial.jpg);" class="carousel-image"></div>
       <div class="carousel-caption">
         <p class="tagline">The Ultimate Waxing and Skin Care Destination</p>
       </div>
     </div>
     <div class="item">
-      <img src="images/facial_2.jpg" class="carousel-image"/>
+      <div style="background-image: url(images/facial_2.jpg);" class="carousel-image"></div>
       <div class="carousel-caption">
         <p class="tagline">The Ultimate Waxing and Skin Care Destination</p>
       </div>
     </div>
     <div class="item">
-      <img src="images/leg_wax.jpg" class="carousel-image"/>
+      <div style="background-image: url(images/leg_wax.jpg);" class="carousel-image"></div>
       <div class="carousel-caption">
         <p class="tagline">The Ultimate Waxing and Skin Care Destination</p>
       </div>
     </div>
     <div class="item">
-      <img src="images/tan_woman.jpg" class="carousel-image"/>
+      <div style="background-image: url(images/tan_woman.jpg);" class="carousel-image"></div>
       <div class="carousel-caption">
         <p class="tagline">The Ultimate Waxing and Skin Care Destination</p>
       </div>
     </div>
     <div class="item">
-      <img src="images/tan_couple.jpg" class="carousel-image"/>
+      <div style="background-image: url(images/tan_couple.jpg);" class="carousel-image"></div>
       <div class="carousel-caption">
         <p class="tagline">The Ultimate Waxing and Skin Care Destination</p>
       </div>
     </div>
     <div class="item">
-      <img src="images/man_facial.jpg" class="carousel-image"/>
+      <div style="background-image: url(images/man_facial.jpg);" class="carousel-image"></div>
       <div class="carousel-caption">
         <p class="tagline">The Ultimate Waxing and Skin Care Destination</p>
       </div>
@@ -199,14 +200,12 @@
 				          </div>
 				          <div class="col-md-8 specials">
 				            <h2>Specials</h2>
-				            <h4 id="service_title" remote="true"></h4>
-				            <h5 id="service_price"></h5>
-				            <h5 id="service_time"></h5>
-				            <h5 id="service_details"></h5>
-				            <br>
-				    		<a href="https://www.schedulicity.com/scheduling/WMB26T" class="button alt">book now!</a>
-				    		<br>
-				    		<br>
+				            
+				            <div id="specials_carousel" class="carousel slide" data-ride="carousel">
+							    <!-- insert slides here -->
+								<a href="https://www.schedulicity.com/scheduling/WMB26T" class="button alt">book now!</a>
+							</div>
+
 				          </div>
 				          <div class="col-md-2">
 				          </div>
@@ -334,5 +333,6 @@
 			    }   
 			});
 		</script>
+
 	</body>
 </html>

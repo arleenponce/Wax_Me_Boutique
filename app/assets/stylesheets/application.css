@@ -17,6 +17,12 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 
+
+#skel-layers-wrapper {
+	position: absolute !important;
+	bottom: 0;
+}
+
 div.facial {
 	background: url(facial.jpg) no-repeat;
 	background-size: 100%;
@@ -33,6 +39,11 @@ div.wax_men {
 	background: url(wax_men.jpg) no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 div.wax_women {
@@ -69,7 +80,11 @@ div#full_page {
 	background-color: rgba(255,255,255,.7);
 	border-radius: 30px;
 	padding: 2em;
-	height: 600em;
+	position: absolute;
+	top: 6em;
+	bottom: 0;
+	right: 2em;
+	overflow: auto;
 }
 
 h1#title {

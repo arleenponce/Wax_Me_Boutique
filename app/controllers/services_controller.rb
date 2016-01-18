@@ -136,10 +136,10 @@ class ServicesController < ApplicationController
   end
 
   def show_specials
-    @service = Service.where(:service_type => 'Special').sample
-    respond_to do |format|
-    format.json { render :show, status: :ok, location: @service }
-    end
+     @service = Services.all
+     respond_to do |format|
+       format.json { render :json => @service }
+     end
   end
 
   private
