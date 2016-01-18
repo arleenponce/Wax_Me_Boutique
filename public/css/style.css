@@ -8,9 +8,11 @@
 */
 
 /*ARLEEN EDITS*/
-#skel-layers-wrapper {
-	position: absolute !important;
-	bottom: 0;
+
+#service_details {
+	text-transform: none;
+	font-weight: normal;
+
 }
 
 .carousel-image {
@@ -61,6 +63,7 @@
 .specials {
 	background-color: rgba(255,255,255,.4);
 	border-radius: 15px;
+	padding: 3%;
 }
 
 .style3 {
@@ -713,6 +716,11 @@ h3.divtitle {
 
 		.wrapper.style5 {
 			background: url(../images/green_bckgrd.jpg) no-repeat;
+			background-size: cover;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
 			text-align: center;
 			color: white;
 		}
@@ -828,6 +836,7 @@ h3.divtitle {
 					font-weight: bold;
 					margin-left: 100px;
 					transition: all .75s ease-in-out;
+					position: fixed;
 				}
 
 				input.call:hover {
@@ -1014,3 +1023,4 @@ h3.divtitle {
 		text-transform: uppercase;
 		font-weight: 700;
 	}
+

@@ -27,12 +27,22 @@ div.facial {
 	background: url(facial.jpg) no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 div.spray_tan {
 	background: url(spray_tan.jpg) no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 div.wax_men {
@@ -50,12 +60,23 @@ div.wax_women {
 	background: url(wax_women.jpg) no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
 }
 
 div.admin {
 	background: url(admin.jpg) no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 div#full_page {
@@ -78,7 +99,7 @@ div#full_page {
 
 .menu {
 	background-color: rgba(255,255,255,.7);
-	border-radius: 30px;
+	/*border-radius: 30px;*/
 	padding: 2em;
 	position: absolute;
 	top: 6em;
@@ -186,6 +207,7 @@ p#notice {
 					line-height: 2.8em;
 					padding: 0 20px 0;
 					transition: all .75s ease-in-out;
+					position: fixed;
 				}
 
 				input.call:hover {
@@ -283,11 +305,17 @@ input.admin-btn {
 
 .main {
 	background-color: rgba(255,255,255,.7);
-	border-radius: 30px;
-	padding: 1.5em;
+	/*border-radius: 30px;*/
+	/*padding: 1.5em;
 	height: 100%;
 	width: 100%;
-	margin: auto;
+	margin: auto;*/
+	padding: 2em;
+	position: absolute;
+	top: 6em;
+	bottom: 0;
+	right: 2em;
+	overflow: auto;
 }
 
 #pg_title {
