@@ -34,6 +34,8 @@ gem 'yelp'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+ruby "2.2.1"
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'factory_girl_rails'
