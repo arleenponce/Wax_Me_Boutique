@@ -161,7 +161,7 @@ input.admin-btn {
 
 .nav-btn {
 	height: 2em;
-	width: 7em;
+	width: 100px;
 	color: white;
 	border-radius: 10px;
 	background: rgba(167, 168, 99, 1);
@@ -172,10 +172,11 @@ input.admin-btn {
 	background-color: rgba(255,255,255,.7);
 	padding: 2em;
 	position: absolute;
-	top: 6em;
+	top: 40%;
 	bottom: 0;
 	right: 2em;
 	overflow: auto;
+	display: block;
 }
 
 #pg_title {

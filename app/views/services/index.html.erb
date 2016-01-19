@@ -26,52 +26,52 @@
     </div>
     <div class="col-md-10 main">
 
-    <div class="row">
-            <div class="col-md-1 th">
-              Type
-            </div>
-            <div class="col-md-1 th">
-              Name
-            </div>
-            <div class="col-md-1 th">
-              Cost
-            </div>
-            <div class="col-md-1 th">
-              Time
-            </div>
-            <div class="col-md-6 th">
-              Description
-            </div>
-            <div class="col-md-2 th">
-            </div>
-    </div>
-
-      <% @services.sort.each do |service| %>
       <div class="row">
-          <div class="col-md-1 tb">
-            <%= service.service_type %>
-          </div>
-          <div class="col-md-1 tb">
-            <%= service.service_name %>
-          </div>
-          <div class="col-md-1 tb">
-            $<%= service.cost %>
-          </div>
-          <div class="col-md-1 tb">
-            <%= service.time %>
-          </div>
-          <div class="col-md-6 tb">
-            <%= service.description %>
-          </div>
-          <div class="col-md-2 tb">
-            <button type="button" onclick="location.href='/services/<%= service.id %>'" class="service-btn">View</button>
-            <button type="button" onclick="location.href='/services/<%= service.id %>/edit'" class="service-btn">Edit</button>
-            <%= button_to 'Remove', service, method: :delete, :class => "nav-btn", data: { confirm: 'Are you sure you want to remove this service?' } %>
-          </div>
+        <div class="col-md-1 th">
+          Type
+        </div>
+        <div class="col-md-1 th">
+          Name
+        </div>
+        <div class="col-md-1 th">
+          Cost
+        </div>
+        <div class="col-md-1 th">
+          Time
+        </div>
+        <div class="col-md-6 th">
+          Description
+        </div>
+        <div class="col-md-2 th">
+        </div>
       </div>
-      <div class="row list_spacer">
-      </div>
-      <% end %>
+
+        <% @services.sort.each do |service| %>
+        <div class="row">
+            <div class="col-md-1 tb">
+              <%= service.service_type %>
+            </div>
+            <div class="col-md-1 tb">
+              <%= service.service_name %>
+            </div>
+            <div class="col-md-1 tb">
+              $<%= service.cost %>
+            </div>
+            <div class="col-md-1 tb">
+              <%= service.time %>
+            </div>
+            <div class="col-md-6 tb">
+              <%= service.description %>
+            </div>
+            <div class="col-md-2 tb">
+              <button type="button" onclick="location.href='/services/<%= service.id %>'" class="service-btn">View</button>
+              <button type="button" onclick="location.href='/services/<%= service.id %>/edit'" class="service-btn">Edit</button>
+              <%= button_to 'Remove', service, method: :delete, :class => "nav-btn", data: { confirm: 'Are you sure you want to remove this service?' } %>
+            </div>
+        </div>
+        <div class="row list_spacer">
+        </div>
+        <% end %>
 
   <br>
   </div>
