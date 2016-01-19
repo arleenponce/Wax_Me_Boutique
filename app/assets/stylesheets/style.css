@@ -7,160 +7,6 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
-/*ARLEEN EDITS*/
-
-#service_details {
-	text-transform: none;
-	font-weight: normal;
-}
-
-.carousel-image {
-	height: 200px;
-	width: 100%;
-	overflow: hidden;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-
-@media(min-width: 480px){
-	.carousel-image {
-		height: 300px;
-	}
-}
-
-@media(min-width: 768px){
-	.carousel-image {
-		height: 400px;
-	}
-}
-
-@media(min-width: 841px){
-	.carousel-image {
-		height: 500px;
-	}
-}
-
-@media(min-width: 1200px){
-	.carousel-image {
-		height: 600px;
-	}
-}
-
-.brand-img {
-	float: left;
-	padding: 15px 10px 0px 0px;
-	margin-left: 0px;
-
-}
-
-.darktext {
-	color: white;
-	font-weight: bold;
-}
-
-.specials {
-	background-color: rgba(255,255,255,.4);
-	border-radius: 15px;
-	padding: 3%;
-}
-
-.style3 {
-	height: 550px;
-}
-
-.fa-chevron-left {
-	margin-top: 100%;
-}
-
-.fa-chevron-right {
-	margin-top: 100%;
-}
-
-div.spacer {
-	height: 50px;
-}
-div.contact-info {
-	height: 600px;
-	padding: 0px;
-	margin: 0px;
-	top: 1000px;
-}
-
-div.green {
-	background-color: rgba(167, 168, 99, .5);
-	height: 600px;
-	padding: 0px;
-	margin: 0px;
-}
-
-div.white {
-	background-color: rgba(255,255,255,.5);
-	height: 200px;
-	padding: 0px;
-	margin: 0px;
-}
-
-.picture1 {
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
-	margin-left: -15px;
-}
-
-.picture2 {
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
-	margin-left: -15px;
-}
-
-.picture3 {
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
-	margin-left: -15px;
-}
-
-div.info {
-	background-color: rgba(167, 168, 99, 1);
-	color: rgba(255,255,255,1);
-	height: 600px;
-	padding: 0px;
-}
-
-p.divinfo {
-	font-size: 1.2em !important ;
-	margin: 5px 0px 0px -35px;
-}
-
-a.divinfo:link {
-	color:white;
-}
-
-a.divinfo:visited {
-	color:white;
-}
-
-a.divinfo:hover {
-	color: rgba(255, 255, 255, .8);
-}
-
-h3.divtitle {
-	margin: -15px 0px 0px -35px;
-}
-
-.map {
-	margin-bottom: 25px;
-	height: 400px;
-}
-
-#googleMap{
-	border: solid 15px rgba(255, 255, 255, .8);
-	padding: 50px, 50px, 50px, 50px;
-}
-
-
 /* Basic */
 
 	body {
@@ -723,11 +569,12 @@ h3.divtitle {
 
 	#header {
 		color: white;
-		height: 4em;
+		height: 40px;
 		background: rgba(167, 168, 99, .7);
 		width: 100%;
 		position: fixed;
 		z-index: 1;
+		top: 0;
 	}
 
 		#header .container {
@@ -790,12 +637,12 @@ h3.divtitle {
 
 				#nav > ul > li a {
 					color: inherit;
-					line-height: 4em;
+					line-height: 4.4em !important;
 					letter-spacing: 2px;
 					text-decoration: none;
 					text-transform: uppercase;
 					font-weight: 400;
-					font-size: 1em;
+					font-size: 1.05em !important;
 				}
 
 				#nav > ul > li:first-child {
@@ -808,6 +655,10 @@ h3.divtitle {
 
 				#nav > ul > li > ul {
 					display: none;
+				}
+
+				#nav > ul > li > ul > li a {
+					font-size: 5px !important;
 				}
 
 				input.call {
@@ -1008,15 +859,4 @@ h3.divtitle {
 	}
 
 /* Contact Page */
-
-#get_directions {
-	height: 100%;
-	width: auto;
-	/*padding: 15%;*/
-	border: solid 15px rgba(255, 255, 255, .8);
-	background-color: rgba(255, 255, 255, .8);
-	color: #82b440;
-	line-height: 50px;
-
-}
 

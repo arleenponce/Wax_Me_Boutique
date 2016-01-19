@@ -1,0 +1,313 @@
+/*// Place all the styles related to the Services controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+
+
+#skel-layers-wrapper {
+	position: absolute !important;
+	bottom: 0;
+	top: 0;
+}
+
+div.facial {
+	background: url(facial.jpg) no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+div.spray_tan {
+	background: url(spray_tan.jpg) no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+div.wax_men {
+	background: url(wax_men.jpg) no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+div.wax_women {
+	background: url(wax_women.jpg) no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+}
+
+div.admin {
+	background: url(admin.jpg) no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+div#full_page {
+	height:10000px;
+}
+
+.spacer {
+	height: 1em;
+}
+
+.list_spacer {
+	height: 1em;
+	border-bottom: solid black 1px;
+	margin-bottom: 10px;
+}
+
+.table_spacer {
+	height: 1em;
+}
+
+.menu {
+	background-color: rgba(255,255,255,.7);
+	/*border-radius: 30px;*/
+	padding: 2em;
+	position: absolute;
+	top: 6em;
+	bottom: 0;
+	right: 2em;
+	overflow: auto;
+}
+
+h1#title {
+	font-family:'FontAwesome';
+	font-size: 4em;
+	/*padding-top: .5em;*/
+	font-weight: bold;
+	color: rgba(114, 114, 64, .7);
+}
+
+h1#admin {
+	font-family:'FontAwesome';
+	font-size: 4em;
+	/*padding-top: .5em;*/
+	font-weight: bold;
+	color: white;
+}
+
+div#table-head {
+	font-size: 1.4em;
+	font-weight: bold;
+	padding-bottom: .4em
+}
+
+div#table-row {
+	font-size: 1.2em;
+	padding-bottom: .2em
+}
+
+
+/* ADMIN PAGES */
+
+.admin-btn {
+	height: 5em;
+	width: 8em;
+	border-radius: 10px;
+	background: rgba(222, 58, 121, 1);
+	color: white;
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+
+.admin-btn:hover, .service-btn:hover, input.admin-btn:hover, .nav-btn:hover, textarea:hover, .select-style:hover select:hover {
+	background-color: white;
+	color: rgba(167, 168, 99, 1);
+	opacity: .7;
+}
+
+.service-btn {
+	border-radius: 10px;
+	background: rgba(167, 168, 99, 1);
+	color: white;
+	margin-bottom: 1em;
+	width: 4em;
+}
+
+input.admin-btn {
+	border-radius: 10px;
+	background: rgba(167, 168, 99, 1);
+	color: white;
+	margin-bottom: 1em;
+	width: 8em;
+}
+
+.nav-btn {
+	height: 2em;
+	width: 7em;
+	color: white;
+	border-radius: 10px;
+	background: rgba(167, 168, 99, 1);
+	margin-bottom: 10px;
+}
+
+.main {
+	background-color: rgba(255,255,255,.7);
+	padding: 2em;
+	position: absolute;
+	top: 6em;
+	bottom: 0;
+	right: 2em;
+	overflow: auto;
+}
+
+#pg_title {
+	font-weight: bold;
+	color: black;
+}
+
+input.form_field {
+	font-size: 1em;
+	height: 3.5em;
+	width: 35em;
+	border: solid black 1px;
+	background-color: white;
+	color: black;
+	font-weight: normal;
+}
+
+textarea {
+	height: 12em;
+	width: 50em;
+	margin-right: 1em;
+	font-size: 1em;
+	border: solid black 1px;
+}
+
+.select-style select{
+	font-size: 1em;
+	height: 3.5em;
+	background-color: white;
+	border: solid black 1px;
+}
+
+.show {
+	font-size: 1em;
+
+}
+
+.th {
+	font-size: 1.3em;
+	margin-bottom: 20px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.tb {
+	padding: 10px;
+	font-size: 1em;
+
+}
+
+.modal-header {
+	background: rgba(167, 168, 99, 1);
+	color: white;
+}
+
+.modal-body, .modal-footer {
+	background: rgba(167, 168, 99, .2);
+	/*color: white;*/
+}
+
+.modal-btn {
+	background-color: rgba(222, 58, 121, .6);
+	color: white;
+}
+
+/*NAV*/
+
+#nav {
+		width: 100%;
+		position: fixed;
+		top: 0;
+		right: 0;
+	}
+
+		#nav > ul {
+			margin-left: 10%;
+			margin-right: 0;
+			padding-right: 0;
+		}
+
+			#nav > ul > li {
+				border-radius: 4px;
+				display: inline-block;
+				margin-left: 0.5em;
+				padding: 0 0.5em;
+			}
+
+			#nav > ul > li:hover {
+				background-color: rgba(255,255,255, 0.2);
+			}
+
+				#nav > ul > li a {
+					color: inherit;
+					line-height: 4em;
+					letter-spacing: 2px;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-weight: 400;
+					font-size: 1em;
+				}
+
+				#nav > ul > li:first-child {
+					margin-left: 0;
+				}
+
+				#nav > ul > li.active a {
+					color: white;
+				}
+
+				#nav > ul > li > ul {
+					display: none;
+				}
+
+				input.call {
+					color: white;
+					background-color: rgba(130, 180, 64, .5);
+					border: solid rgba(255,255,255, 0.3) 2px;
+					font-size: 18px;
+					font-weight: bold;
+					margin-left: 100px;
+					transition: all .75s ease-in-out;
+					position: fixed;
+					width: 180px;
+				}
+
+				input.call:hover {
+					border: solid rgba(255,255,255, .6) 2px;
+				}
+
+#bannerLogo {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 2;
+}	

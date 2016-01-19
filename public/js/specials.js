@@ -21,6 +21,23 @@ $(document).ready(function() {
     }
   })
 
+    function specials() {
+    $.ajax({
+      dataType: 'json',
+      url: '/services/show_specials',
+      success: function(data){
+      domElement.html(data.service_name);
+      domElement2.html("$" + data.cost);
+      domElement3.html(data.time + " min");
+      domElement4.html(data.description);
+      },
+      error: function() {
+        domElement2.html("Function is not functioning")
+      }
+    })
+  }
+})
+
   // function rotate_specials(specials) {
   //   var carouselInner = document.createElement('div')
   //   carouselInner.className = 'carousel-inner'
@@ -44,20 +61,3 @@ $(document).ready(function() {
   //   specialsCarousel.appendChild(carouselInner)
     
   // }
-
-  function specials() {
-    $.ajax({
-      dataType: 'json',
-      url: '/services/show_specials',
-      success: function(data){
-      domElement.html(data.service_name);
-      domElement2.html("$" + data.cost);
-      domElement3.html(data.time + " min");
-      domElement4.html(data.description);
-      },
-      error: function() {
-        domElement2.html("Function is not functioning")
-      }
-    })
-  }
-})

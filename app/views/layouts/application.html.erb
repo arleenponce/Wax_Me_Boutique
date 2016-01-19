@@ -6,16 +6,21 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-	
-	<!-- <p class="notice"><%= notice %></p> -->
-	
-  <!-- Header -->
+<body class="homepage">
+
+    <!-- Header Wrapper -->
+      <div class="wrapper style1">
+
+      
+      <!-- Header -->
         <div id="header">
           <div class="container">
+                <!-- Logo -->
+              <h1><a href="/" id="logo">Wax Me Boutique</a></h1>
             
+            <!-- Nav -->
               <nav id="nav">
-                <img id="bannerLogo" src="/images/wax-me-logo.png">
+                <img id="bannerLogo" src="/images/wax-me-logo.png" />
                 <ul>
                   <li class="active"><a href="/">Home</a></li>
                   <li>
@@ -43,7 +48,7 @@
                   <ul>
                     <li><a href="/services/organic-facials">Organic Facials</a></li>
                     <li><a href="/services/chemical-peels">Chemical Peels</a></li>
-                    <li><a href="/services/advanced-treatment">Advanced Treatment</a></li>
+                    <li><a href="/services/advanced-treatment">Advanced Treatments</a></li>
                   </ul>
                   <li>
                   <a href="/services/spray-tan">Spray Tan</a>
@@ -58,20 +63,18 @@
                   <a href="/contact">Contact</a>
                   <li>
                   <a href="https://www.schedulicity.com/scheduling/WMB26T"><strong>Book Online!</strong></a></li>
-                  <% if admin_signed_in? %>
-                      Logged in as <strong><%= current_admin.username %></strong><br>
-                      <%= link_to 'Edit Profile', edit_admin_registration_path %> | <%= link_to "Logout", destroy_admin_session_path, method: :delete %> | <a href="/services">All Services</a>
-                  <% else %>
-                     <%= link_to "Sign Up", new_admin_registration_path %> |
-                     <%= link_to "Login", new_admin_session_path %>
-                    <a href="tel:+18582248126"><input type="button" class="call" value="858-224-8126"></a>
-                  <% end %>
-                </ul>       
-              </nav>
-  
-          </div>
-          
-        </div>
+                            <% if admin_signed_in? %>
+                                Logged in as <strong><%= current_admin.username %></strong><br>
+                                <%= link_to 'Edit Profile', edit_admin_registration_path %> | <%= link_to "Logout", destroy_admin_session_path, method: :delete %> | <a href="/services">All Services</a>
+                            <% else %>
+                              <a href="tel:+18582248126"><input type="button" class="call" value="858-224-8126"></a>
+                            <% end %>
+                          </ul>       
+                        </nav>
+            
+                    </div>
+                    
+                  </div>
  
   <p class="alert"><%= alert %></p>
 
