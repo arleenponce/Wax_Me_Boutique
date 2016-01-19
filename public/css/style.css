@@ -9,6 +9,15 @@
 
 /*ARLEEN EDITS*/
 
+@media(max-width: 840px) {
+div.pictures {
+	display: none;
+}
+div.green {
+	display: none;
+}
+}
+
 #service_details {
 	text-transform: none;
 	font-weight: normal;
