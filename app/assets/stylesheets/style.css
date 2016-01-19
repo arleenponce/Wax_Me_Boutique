@@ -9,12 +9,6 @@
 
 /* Basic */
 
-	body {
-		background: url(../images/facial_5.jpg) no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-	}
-
 		body.loading * {
 			-moz-transition: none !important;
 			-webkit-transition: none !important;
@@ -658,7 +652,7 @@
 				}
 
 				#nav > ul > li > ul > li a {
-					font-size: 5px !important;
+					
 				}
 
 				input.call {
