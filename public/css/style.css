@@ -40,13 +40,13 @@ div.green {
 
 @media(min-width: 768px){
 	.carousel-image {
-		height: 400px;
+		height: 500px;
 	}
 }
 
 @media(min-width: 841px){
 	.carousel-image {
-		height: 500px;
+		height: 550px;
 	}
 }
 
@@ -183,7 +183,7 @@ h3.divtitle {
 /* Basic */
 
 	body {
-		background: url(../images/facial_5.jpg) no-repeat;
+		background: url(../images/tan_couple.jpg) no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
 	}
@@ -835,7 +835,7 @@ h3.divtitle {
 					border: solid rgba(255,255,255, 0.3) 2px;
 					font-size: 1.3em;
 					font-weight: bold;
-					margin-left: 100px;
+					margin-left: 70px;
 					transition: all .75s ease-in-out;
 					position: fixed;
 				}
@@ -889,7 +889,7 @@ h3.divtitle {
 #bannerLogo {
 	position: absolute;
 	top: 5px;
-	left: 5px;
+	left: 35px;
 	z-index: 2;
 	height: 175px;
 
