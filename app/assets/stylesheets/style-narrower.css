@@ -136,7 +136,7 @@
 			}
 
 			#titleBar .toggle:after {
-				background: image-url("toggle.svg") 0px 0px no-repeat;
+				background: url("toggle.svg") 0px 0px no-repeat;
 				content: '';
 				display: block;
 				height: 13px;
