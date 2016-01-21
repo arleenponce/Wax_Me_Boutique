@@ -16,7 +16,7 @@
 
 div.facial {
 	background: url(facial.jpg) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-attachment: fixed;
 	position: absolute;
 	top: 0;
@@ -27,7 +27,7 @@ div.facial {
 
 div.spray_tan {
 	background: url(spray_tan.jpg) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-attachment: fixed;
 	position: absolute;
 	top: 0;
@@ -38,7 +38,7 @@ div.spray_tan {
 
 div.wax_men {
 	background: url(wax_men.jpg) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-attachment: fixed;
 	position: absolute;
 	top: 0;
@@ -49,7 +49,7 @@ div.wax_men {
 
 div.wax_women {
 	background: url(wax_women.jpg) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-attachment: fixed;
 	position: absolute;
 	top: 0;
@@ -61,7 +61,7 @@ div.wax_women {
 
 div.admin {
 	background: url(admin.jpg) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-attachment: fixed;
 	position: absolute;
 	top: 0;
