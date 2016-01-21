@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
 
-@import url("font-awesome.min.css");
+@import "font-awesome.min";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 
 
@@ -15,7 +15,7 @@
 }
 
 div.facial {
-	background: url(facial.jpg) no-repeat;
+	background: image-url("facial.jpg") no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	position: absolute;
@@ -26,7 +26,7 @@ div.facial {
 }
 
 div.spray_tan {
-	background: url(spray_tan.jpg) no-repeat;
+	background: image-url("spray_tan.jpg") no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	position: absolute;
@@ -37,7 +37,7 @@ div.spray_tan {
 }
 
 div.wax_men {
-	background: url(wax_men.jpg) no-repeat;
+	background: image-url("wax_men.jpg") no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	position: absolute;
@@ -48,7 +48,7 @@ div.wax_men {
 }
 
 div.wax_women {
-	background: url(wax_women.jpg) no-repeat;
+	background: image-url("wax_women.jpg") no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	position: absolute;
@@ -60,7 +60,7 @@ div.wax_women {
 }
 
 div.admin {
-	background: url(admin.jpg) no-repeat;
+	background: image-url("admin.jpg") no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	position: absolute;
