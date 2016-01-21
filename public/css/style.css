@@ -8,6 +8,31 @@
 */
 
 /*ARLEEN EDITS*/
+div.about {
+	background-color: rgba(255,255,255,.7);
+	padding: 2em;
+	padding-right: 3%;
+	/*position: absolute;*/
+	top: 40%;
+	bottom: 0;
+	overflow: auto;
+}
+
+.team-pic {
+	display: block;
+	float: right;
+	border: 5px solid white;
+}
+
+.team-title {
+	margin-left: 3%;
+	font-family: FontAwesome;
+}
+
+.team-text {
+	font-family: FontAwesome;
+	font-size: 18px;
+}
 
 @media(max-width: 840px) {
 div.pictures {
@@ -86,16 +111,6 @@ div.green {
 	margin-top: 100%;
 }
 
-/*.left-bar {
-	background-color: rgba(255,255,255,.8);
-	height: 600px;
-	margin-top: 25px;
-	color: rgba(167, 168, 99, 1);
-	font-weight: bold;
-	font-size: 20px;
-	line-height: 50px;
-	text-align: right;
-}*/
 div.spacer {
 	height: 50px;
 }
