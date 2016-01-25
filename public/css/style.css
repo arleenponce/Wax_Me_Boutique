@@ -13,7 +13,6 @@ div.about {
 	padding: 2em;
 	padding-right: 3%;
 	/*position: absolute;*/
-	top: 40%;
 	bottom: 0;
 	overflow: auto;
 }
@@ -907,7 +906,7 @@ h3.divtitle {
 	top: 5px;
 	left: 35px;
 	z-index: 2;
-	height: 175px;
+	height: 200px;
 
 }	
 #banner .carousel-inner img{
