@@ -103,11 +103,11 @@ div.green {
 }
 
 .fa-chevron-left {
-	margin-top: 100%;
+	margin-top: 150%;
 }
 
 .fa-chevron-right {
-	margin-top: 100%;
+	margin-top: 150%;
 }
 
 div.spacer {
@@ -903,10 +903,10 @@ h3.divtitle {
 	}
 #bannerLogo {
 	position: absolute;
-	top: 5px;
-	left: 35px;
+	top: 0px;
+	left: 25px;
 	z-index: 2;
-	height: 200px;
+	height: 250px;
 
 }	
 #banner .carousel-inner img{
