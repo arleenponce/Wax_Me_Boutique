@@ -1,30 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<div class="spray_tan">
+<div class="body facial">
    <div class="col-xs-12 col-sm-8 col-md-6 menu">
-      <h1 id="title">Spray Tan</h1>
-      <p>The result will last about a week but varies with each individual depending on their personal skin renewal cycle. The application takes about 10 to 15 minutes and drying time of 5 minutes.</p>
-       
-      <ul class="spray-tan">
-      <strong>Before your spray tanning session:</strong>
-          <li>EXFOLIATE and WAX all areas to be tanned before each session. Pay special attention to your knees, ankles, feet, elbows, and knuckles.</li>
-          <li>Getting rid of dead skin before tanning will extend the life of the tan. If you don’t exfoliate properly, the tan will start to flake off within 24 hours.</li>
-          <li>No lotions, perfumes, body oils, make up, moisturizers, or sunscreens.</li>
-          <li>Wear loose-fitting clothes, preferably dark colors.</li>
-          <li>You may tan in the garment of your choice. Topless is fine as well as nude. Whatever you are comfortable with.</li>
-      </ul>
-      <ul class="spray-tan">
-      <strong>After your spray tanning session:</strong>
-          <li>Wait 6 to 8 hours before you shower. This will allow the solution to fully develop in the skin. The longer you wait to shower the better results.</li>
-          <li>Moisturize the entire body, preferably twice a daily for at least one week.</li>
-          <li>Avoid exfoliating the skin.</li>
-          <li>Avoid long hot showers, hot tubs, and Jacuzzis. They speed up the exfoliation process.</li>
-          <li>Avoid exercising immediately after your tanning session. Sweating will shorten life of your tan.</li>
-          <li>Always apply sunscreen when exposed to the sun.</li>
-      </ul>
+      <h1 id="title">Corrective Peels</h1>
+      <p>PCA Skin professional products are scientifically formulated to gently stimulate, firm, and tighten skin. PCA Skin treatments are carefully blended to remove dull, damaged surface layers without the downtime often associated with chemical peels. These treatments increase the natural skin cell turnover resulting in healthy, beautiful skin. These superficial peels will result in little to no downtime. Most clients find it unnecessary to apply makeup, as the skin will be smooth, dewy, and radiant following their treatment. Progressive, not aggressive, is the philosophy.
+      <br><br>
+      <strong>First time getting a PCA peel? All our peels include an initial free skin care consultation, application of the peel, application of customized corrective serums and a post procedure skin care kit. A series of peels is the most effective way to address any skin issue and obtain optimal results. We offer a special price when you purchase a package of 3 and 6 treatments.</strong></p>
     
-      <div class="row spacer">
-      </div>
       <div class="row" id="table-head">
             <div class="col-md-4">Service name</div>
             <div class="col-md-2">Cost</div>
@@ -34,8 +16,8 @@
 
       <!-- <div class="row" id="table-body"> -->
           
-          <% @tan_services.each do |service| %>
-              <div class="row">
+          <% @chemical_peels.order("id asc").each do |service| %>
+              <div class="row" id="table-row">
                   <div class="col-md-4" id="table-cell">
                     <%= service.service_name %>
                   </div>
@@ -43,13 +25,14 @@
                     $<%= service.cost %>
                   </div>
                   <div class="col-md-3" id="table-cell">
-                    <%= service.time %> minutes
+                    <%= service.time %>
                   </div>
-                  <div class="col-md-3">
-                    <button type="button" class="nav-btn" data-toggle="modal" data-target="#modal-<%= service.id %>">See Details</button>
+                  <div class="col-md-3" id="table-cell">
+                   <button type="button" class="nav-btn" data-toggle="modal" data-target="#modal-<%= service.id %>">Details</button>
                   </div>
-
-                <!-- Modal -->
+              </div>
+              
+                  <!-- Modal -->
                   <div id="modal-<%= service.id %>" class="modal fade" role="dialog">
                     <div class="modal-dialog">
 
@@ -91,7 +74,7 @@
 
                     </div>
                   </div>
-              </div>
+                
           <% end %>
-    </div>    
+        </div>
   </div>

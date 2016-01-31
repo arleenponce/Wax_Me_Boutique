@@ -84,10 +84,6 @@ div#full_page {
 	margin-bottom: 10px;
 }
 
-.table_spacer {
-	height: 1em;
-}
-
 .menu {
 	background-color: rgba(255,255,255,.7);
 	padding: 2em;
@@ -96,6 +92,18 @@ div#full_page {
 	bottom: 0;
 	right: 2em;
 	overflow: auto;
+	text-align: center;
+}
+
+@media(max-width: 840px){
+	.menu{
+	right: 0em !important;	
+	}
+
+	#table-head{
+	display: none;
+	}
+
 }
 
 h1#title {
@@ -116,12 +124,14 @@ h1#admin {
 div#table-head {
 	font-size: 1.4em;
 	font-weight: bold;
-	padding-bottom: .4em
+	padding-bottom: 10px;
+	text-align: left;
 }
 
 div#table-cell {
 	font-size: 1.2em;
-	padding-bottom: .2em
+	padding: 0px 40px 5px;
+	text-align: left;
 }
 
 

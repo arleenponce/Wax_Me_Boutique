@@ -85,13 +85,13 @@ class ServicesController < ApplicationController
   end
 
   def organic_facials
-       @organic_facials = Service.where(:service_type => 'Organic Facials')
-       render '/services/organic-facials'
+       @organic_facials = Service.where(:service_type => 'Signature Facials')
+       render '/services/signature-facials'
   end
 
   def chemical_peels
-       @chemical_peels = Service.where(:service_type => 'Chemical Peels')
-       render '/services/chemical-peels'
+       @chemical_peels = Service.where(:service_type => 'Corrective Peels')
+       render '/services/corrective-peels'
   end
 
   def advanced_treatment
@@ -100,8 +100,8 @@ class ServicesController < ApplicationController
   end
 
   def spray_tan
-       @tan_services = Service.where(:service_type => 'Spray Tan')
-       render '/services/spray-tans'
+       @tan_services = Service.where(:service_type => 'Sunless Tan')
+       render '/services/sunless-tans'
   end
 
   def specials

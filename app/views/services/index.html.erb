@@ -66,6 +66,7 @@
             <div class="col-md-2 tb">
               <button type="button" onclick="location.href='/services/<%= service.id %>'" class="service-btn">View</button>
               <button type="button" onclick="location.href='/services/<%= service.id %>/edit'" class="service-btn">Edit</button>
+              <button class="nav-btn" data-confirm="Are you sure you want to remove this service?" method="delete" value="Remove" action="/services/<%= service.id %>" type="submit" >Remove</button>
               <%= button_to 'Remove', service, method: :delete, :class => "nav-btn", data: { confirm: 'Are you sure you want to remove this service?' } %>
             </div>
         </div>

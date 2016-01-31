@@ -16,10 +16,10 @@ Rails.application.routes.draw do
   match('services/wax-women-face', {:via => :get, :to => "services#wax_women_face"})
   match('services/wax-women-packages', {:via => :get, :to => "services#wax_women_packages"})
   match('services/advanced-treatment', {:via => :get, :to => "services#advanced_treatment"})
-  match('services/chemical-peels', {:via => :get, :to => "services#chemical_peels"})
-  match('services/organic-facials', {:via => :get, :to => "services#organic_facials"})
+  match('services/corrective-peels', {:via => :get, :to => "services#chemical_peels"})
+  match('services/signature-facials', {:via => :get, :to => "services#organic_facials"})
   match('services/waxing', {:via => :get, :to => "services#waxing"})
-  match('services/spray-tan', {:via => :get, :to => "services#spray_tan"})
+  match('services/sunless-tan', {:via => :get, :to => "services#spray_tan"})
 
   resources :services
   # The priority is based upon order of creation: first created -> highest priority.

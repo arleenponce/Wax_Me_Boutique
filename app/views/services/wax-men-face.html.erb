@@ -21,21 +21,22 @@
 
       <!-- <div class="row" id="table-body"> -->
           
-          <% @wax_men_face.each do |service| %>
+          <% @wax_men_face.order("id asc").each do |service| %>
               <div class="row" id="table-row">
-                  <div class="col-md-4">
+                  <div class="col-md-4" id="table-id">
                     <%= service.service_name %>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-md-2" id="table-id">
                     $<%= service.cost %>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3" id="table-id">
                     <%= service.time %>
                   </div>
-                  <div class="col-md-3">
-                   <button type="button" class="nav-btn" data-toggle="modal" data-target="#modal-<%= service.id %>">See Details</button>
+                  <div class="col-md-3" id="table-id">
+                   <button type="button" class="nav-btn" data-toggle="modal" data-target="#modal-<%= service.id %>">Details</button>
                   </div>
-              
+              </div>
+
                   <!-- Modal -->
                   <div id="modal-<%= service.id %>" class="modal fade" role="dialog">
                     <div class="modal-dialog">
@@ -59,7 +60,7 @@
 
                                 <p class="show">
                                   <strong>Time:</strong>
-                                  <%= service.time %> minutes
+                                  <%= service.time %>
                                 </p>
 
                                 <p class="show">
@@ -79,7 +80,6 @@
                     </div>
                   </div>
                   
-                </div>
           <% end %>
         </div>
     </div>

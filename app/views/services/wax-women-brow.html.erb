@@ -11,10 +11,7 @@
       Worry about body hair less often! Waxing removes hair from the root so hair takes longer to grow back. Depending on the body part being waxed and your growth pattern, our waxes can last anywhere from 4 to 8 weeks.
        
       Have sensitive skin? No problem! Our wax is perfect for sensitive skin! Other methods such as shaving or hair removal creams can be harsh and cause reactions for sensitive skin. Our wax is made from all-natural ingredients like pine resin and beeswax and is always applied at body temperature so you will get premium hair removal without paying the harsh price of skin reactions.</p>
-    
-    
-      <div class="row spacer">
-      </div>
+
       <div class="row" id="table-head">
             <div class="col-md-4">Service name</div>
             <div class="col-md-2">Cost</div>
@@ -24,20 +21,21 @@
 
       <!-- <div class="row" id="table-body"> -->
           
-          <% @wax_women_brow.each do |service| %>
+          <% @wax_women_brow.order("id asc").each do |service| %>
               <div class="row" id="table-row">
-                  <div class="col-md-4">
+                  <div class="col-md-4" id="table-cell">
                     <%= service.service_name %>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-md-2" id="table-cell">
                     $<%= service.cost %>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3" id="table-cell">
                     <%= service.time %>
                   </div>
-                  <div class="col-md-3">
-                   <button type="button" class="nav-btn" data-toggle="modal" data-target="#modal-<%= service.id %>">See Details</button>
+                  <div class="col-md-3" id="table-cell">
+                   <button type="button" class="nav-btn" data-toggle="modal" data-target="#modal-<%= service.id %>">Details</button>
                   </div>
+              </div>
               
                   <!-- Modal -->
                   <div id="modal-<%= service.id %>" class="modal fade" role="dialog">
@@ -62,7 +60,7 @@
 
                                 <p class="show">
                                   <strong>Time:</strong>
-                                  <%= service.time %> minutes
+                                  <%= service.time %>
                                 </p>
 
                                 <p class="show">
@@ -82,7 +80,6 @@
                     </div>
                   </div>
                   
-                </div>
           <% end %>
         </div>
   </div>

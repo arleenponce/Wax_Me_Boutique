@@ -1,15 +1,16 @@
 <p id="notice"><%= notice %></p>
 
 <div class="body facial">
-   <div class="col-xs-12 col-sm-8 col-md-6 menu">
-      <h1 id="title">PCA Skin Chemical Peels</h1>
-      <p>PCA Skin professional products are scientifically formulated to gently stimulate, firm, and tighten skin. PCA Skin treatments are carefully blended to remove dull, damaged surface layers without the downtime often associated with chemical peels. These treatments increase the natural skin cell turnover resulting in healthy, beautiful skin. These superficial peels will result in little to no downtime. Most clients find it unnecessary to apply makeup, as the skin will be smooth, dewy, and radiant following their treatment. Progressive, not aggressive, is the philosophy.
- 
-      TCA (Trichloroacetic acid) peels: Exceptional for the treatment of aging skin, fine lines and wrinkles, hyperpigmentation, dehydration, and acne, especially in dry skin. TCA peels are often thought of as very aggressive and producing substantial discomfort. PCA Professional™ TCA peels are very different from the standard. Our TCA solutions are blends formulated with many ingredients including lactic acid, ascorbic acid (vitamin C), plumping phyto hormones, and kojic and azelaic acids to produce dramatic results without the discomfort and downtime associated with traditional TCA peels.</p>
+  <div class="col-xs-12 col-sm-8 col-md-6 menu">
+      <h1 id="title">Signature Facials</h1>
+      <p>We customize all of our treatments based on your individual needs. At Wax Me Boutique, we believe in providing the best professional treatments that are safe and effective for the skin. Our products are free of parabens, animal by-products, propylene glycol, sodium lauryl sulfates, harmful colorants and fragrances, mineral oils, petroleum, and other harsh cosmetic chemicals.
+      <br><br>
+      The start to healthy skin is by having regular facials! We recommend getting facials every 2 - 4 weeks depending on your skin type, skin condition, age, skin goals, budget, etc. In order to get the most out of every treatment, discuss with your esthetician an ideal facial schedule and what skincare regimen to follow at home to maintain your skin in between appointments.
+      <br><br>
+      *Add-on NufACE red light therapy to any treatment to boost collagen and elastin production* $25
+      *Add-on Ultrasonic Technology to any treatment to increase exfoliation and product penetration* $25
+</p>
     
-    
-      <div class="row spacer">
-      </div>
       <div class="row" id="table-head">
             <div class="col-md-4">Service name</div>
             <div class="col-md-2">Cost</div>
@@ -19,20 +20,21 @@
 
       <!-- <div class="row" id="table-body"> -->
           
-          <% @chemical_peels.each do |service| %>
+          <% @organic_facials.order("id asc").each do |service| %>
               <div class="row" id="table-row">
-                  <div class="col-md-4">
+                  <div class="col-md-4" id="table-cell">
                     <%= service.service_name %>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-md-2" id="table-cell">
                     $<%= service.cost %>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3" id="table-cell">
                     <%= service.time %> minutes
                   </div>
-                  <div class="col-md-3">
-                   <button type="button" class="nav-btn" data-toggle="modal" data-target="#modal-<%= service.id %>">See Details</button>
+                  <div class="col-md-3" id="table-cell">
+                   <button type="button" class="nav-btn" data-toggle="modal" data-target="#modal-<%= service.id %>">Details</button>
                   </div>
+              </div>
               
                   <!-- Modal -->
                   <div id="modal-<%= service.id %>" class="modal fade" role="dialog">
@@ -77,7 +79,6 @@
                     </div>
                   </div>
                   
-                </div>
           <% end %>
         </div>
   </div>

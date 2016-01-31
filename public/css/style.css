@@ -114,14 +114,16 @@ div.spacer {
 	height: 50px;
 }
 div.contact-info {
-	height: 600px;
+	height: auto;
+	width: 100%;
 	padding: 0px;
 	margin: 0px;
 	top: 1000px;
+	right: 0;
 }
 
 div.green {
-	background-color: rgba(167, 168, 99, .5);
+	background-color: rgba(167, 168, 99, .3);
 	height: 600px;
 	padding: 0px;
 	margin: 0px;
@@ -157,10 +159,10 @@ div.white {
 }
 
 div.info {
-	background-color: rgba(167, 168, 99, 1);
-	color: rgba(255,255,255,1);
-	height: 600px;
-	padding: 0px;
+	background-color: rgba(167, 168, 99, .8);
+	color: black;
+	height: auto;
+	padding-bottom: 15px;
 }
 
 p.divinfo {
@@ -169,7 +171,7 @@ p.divinfo {
 }
 
 a.divinfo:link {
-	color:white;
+	color:black;
 }
 
 a.divinfo:visited {
@@ -190,8 +192,8 @@ h3.divtitle {
 }
 
 #googleMap{
-	border: solid 15px rgba(255, 255, 255, .8);
-	padding: 50px, 50px, 50px, 50px;
+	/*border: solid 15px rgba(255, 255, 255, .8);
+	padding: 50px, 50px, 50px, 50px;*/
 }
 
 
@@ -1044,12 +1046,13 @@ h3.divtitle {
 
 #get_directions {
 	height: 100%;
-	width: auto;
-	/*padding: 15%;*/
-	border: solid 15px rgba(255, 255, 255, .8);
+	width: 100%;
+	display: block;
+	padding: 0px 20px 20px;
 	background-color: rgba(255, 255, 255, .8);
 	color: #82b440;
 	line-height: 50px;
+	right: 0;
 
 }
 

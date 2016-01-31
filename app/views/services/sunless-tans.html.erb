@@ -1,21 +1,32 @@
 <p id="notice"><%= notice %></p>
 
-<div class="body facial">
-
+<div class="spray_tan">
    <div class="col-xs-12 col-sm-8 col-md-6 menu">
-      <h1 id="title">Advanced Treatments</h1>
-      <p>Diamond microdermabrasion is a simple, quick, painless, and non-invasive skin rejuvenation procedure using the tip of diamond. There are thousands of tiny diamonds on the tip to perform skin exfoliation. It gently removes the outermost layer of dead skin cells from the epidermis. You will see your skin looking glowing and fresh after the first treatment. There is no downtime, and you will absolutely get back to your daily routine immediately after the treatment. Microdermabrasion is a gentle solution for dry, rough skin texture, dull complexions, blotchy skin coloring, acne, clogged pores, and oily skin. We recommend a series of 3 or 6 treatments every two weeks for healthy, long-lasting results.
- 
-      Benefits of microdermabrasion:
-      •  Reduces fines lines and wrinkles
-      •  Evens out skin tone
-      •  Reduces and prevents age spots
-      •  Treats sun-damaged skin
-      •  Reduces acne as well as acne scars
-      •  Smoothens the skin
-      •  Removes white heads and blackheads
-      •  Brightens up the skin
-      •  Tightens the skin and shrinks pores</p>
+      <h1 id="title">Sunless Tan</h1>
+      <p><strong>Sun tanning is harmful to your skin and causes premature aging, get a gorgeous sun kissed look without sun exposure.</strong>
+      <br><br>
+      A fine mist containing dihydroxyacetone (DHA) using a spray gun created for sunless tanning. DHA is a food-derived ingredient, which has been approved by the FDA for external cosmetics applications and it's considered non-toxic and non-carcinogenic.
+      <br><br>
+      When the solution is applied, it reacts with the amino acids in the outer layer of the skin cells, producing a natural-looking tan. The effect of DHA usually appears within an hour of application of the solution. Maximum color results may take anywhere from 4-6 hours to develop.
+      <br><br>
+      The result will last about a week but varies with each individual depending on their personal skin renewal cycle. The application takes about 15 to 20 minutes and drying time of 5 minutes.</p>
+      <ul class="spray-tan">
+      <strong>Before your spray tanning session:</strong>
+          <li>EXFOLIATE and WAX all areas to be tanned before each session. Pay special attention to your knees, ankles, feet, elbows, and knuckles.</li>
+          <li>Getting rid of dead skin before tanning will extend the life of the tan. If you don’t exfoliate properly, the tan will start to flake off within 24 hours.</li>
+          <li>No lotions, perfumes, body oils, make up, moisturizers, or sunscreens.</li>
+          <li>Wear loose-fitting clothes, preferably dark colors.</li>
+          <li>You may tan in the garment of your choice. Topless is fine as well as nude. Whatever you are comfortable with.</li>
+      </ul>
+      <ul class="spray-tan">
+      <strong>After your spray tanning session:</strong>
+          <li>Wait 6 to 8 hours before you shower. This will allow the solution to fully develop in the skin. The longer you wait to shower the better results.</li>
+          <li>Moisturize the entire body, preferably twice a daily for at least one week.</li>
+          <li>Avoid exfoliating the skin.</li>
+          <li>Avoid long hot showers, hot tubs, and Jacuzzis. They speed up the exfoliation process.</li>
+          <li>Avoid exercising immediately after your tanning session. Sweating will shorten life of your tan.</li>
+          <li>Always apply sunscreen when exposed to the sun.</li>
+      </ul>
     
       <div class="row" id="table-head">
             <div class="col-md-4">Service name</div>
@@ -24,7 +35,7 @@
             <div class="col-md-3"></div>
       </div>
           
-          <% @advanced_treatment.order("id asc").each do |service| %>
+          <% @tan_services.order("id asc").each do |service| %>
               <div class="row" id="table-row">
                   <div class="col-md-4" id="table-cell">
                     <%= service.service_name %>
@@ -33,14 +44,14 @@
                     $<%= service.cost %>
                   </div>
                   <div class="col-md-3" id="table-cell">
-                    <%= service.time %> minutes
+                    <%= service.time %>
                   </div>
                   <div class="col-md-3" id="table-cell">
-                   <button type="button" class="nav-btn" data-toggle="modal" data-target="#modal-<%= service.id %>">Details</button>
+                    <button type="button" class="nav-btn" data-toggle="modal" data-target="#modal-<%= service.id %>">Details</button>
                   </div>
               </div>
-              
-                  <!-- Modal -->
+
+                <!-- Modal -->
                   <div id="modal-<%= service.id %>" class="modal fade" role="dialog">
                     <div class="modal-dialog">
 
@@ -82,7 +93,6 @@
 
                     </div>
                   </div>
-                  
           <% end %>
-        </div>
+    </div>    
   </div>
