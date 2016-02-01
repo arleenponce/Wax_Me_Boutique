@@ -104,6 +104,21 @@ div#full_page {
 	display: none;
 	}
 
+	.main {
+	left: 0em !important;	
+	}
+
+	button.add {
+	position: absolute;
+	right: 0;
+	top: 0;
+	}
+
+	h1#admin{
+	position: absolute;
+	left: 0;
+	}
+
 }
 
 h1#title {
@@ -116,9 +131,17 @@ h1#title {
 
 h1#admin {
 	font-family:'FontAwesome';
-	font-size: 4em;
+	font-size: 3.4em;
 	font-weight: bold;
 	color: white;
+	text-align: left;
+}
+
+div#admin {
+	top: 10%;
+	position: absolute;
+	right: 5%;
+	left: 20%;
 }
 
 div#table-head {
@@ -181,9 +204,16 @@ input.admin-btn {
 	background-color: rgba(255,255,255,.7);
 	padding: 2em;
 	position: absolute;
-	top: 40%;
+	top: 25%;
+	left: 25%;
 	bottom: 0;
 	overflow: auto;
+}
+
+.buttons {
+	position: absolute;
+	right: 15%;
+	top: 26%;
 }
 
 #pg_title {
