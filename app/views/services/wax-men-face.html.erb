@@ -23,16 +23,16 @@
           
           <% @wax_men_face.order("id asc").each do |service| %>
               <div class="row" id="table-row">
-                  <div class="col-md-4" id="table-id">
+                  <div class="col-md-4" id="table-cell">
                     <%= service.service_name %>
                   </div>
-                  <div class="col-md-2" id="table-id">
+                  <div class="col-md-2" id="table-cell">
                     $<%= service.cost %>
                   </div>
-                  <div class="col-md-3" id="table-id">
+                  <div class="col-md-3" id="table-cell">
                     <%= service.time %>
                   </div>
-                  <div class="col-md-3" id="table-id">
+                  <div class="col-md-3" id="table-cell">
                    <button type="button" class="nav-btn" data-toggle="modal" data-target="#modal-<%= service.id %>">Details</button>
                   </div>
               </div>
