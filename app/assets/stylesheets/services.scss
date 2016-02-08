@@ -6,6 +6,16 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 
 
+p {
+	text-align: justify !important;
+}
+
+.spray-tan {
+	list-style-type: circle;
+	text-align: left;
+	list-style-position: inside;	
+}
+
 #skel-layers-wrapper {
 	position: absolute !important;
 	bottom: 0;

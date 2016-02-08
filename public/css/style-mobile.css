@@ -12,6 +12,7 @@
 
 	header.major .byline {
 		font-size: 1.1em;
+		text-align: justify;
 	}
 
 	.wrapper {

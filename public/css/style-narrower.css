@@ -20,6 +20,7 @@
 
 	header.major .byline {
 		font-size: 1.1em;
+		text-align: justify;
 	}
 
 /* Button */
@@ -51,6 +52,7 @@
 
 			.wrapper.style2 .major .byline {
 				font-size: 1em;
+				text-align: justify;
 			}
 
 		.wrapper.style2 h3 {

@@ -17,9 +17,16 @@ div.about {
 	background-color: rgba(255,255,255,.7);
 	padding: 2em;
 	padding-right: 3%;
-	/*position: absolute;*/
 	bottom: 0;
 	overflow: auto;
+}
+
+.subheading {
+	text-align: center !important;
+}
+
+.products {
+	text-align: justify;
 }
 
 .team-pic {
@@ -172,7 +179,6 @@ div.info {
 p.divinfo {
 	color: black;
 	font-size: 1.2em !important ;
-	margin: 5px 0px 0px -35px;
 	text-align: center;
 }
 
@@ -349,9 +355,12 @@ div.directions {
 			padding-top: 1em;
 			letter-spacing: 1px;
 			font-size: 1.8em;
-			
+			text-align: justify;
 		}
 
+		.subeheading {
+			text-align: center !important;
+		}
 	footer > :last-child {
 		margin-bottom: 0;
 	}
@@ -729,6 +738,7 @@ div.directions {
 					line-height: 1.6em;
 					text-transform: none;
 					font-size: 1.4em;
+					text-align: justify;
 				}
 
 			.wrapper.style2 h3 {
@@ -956,7 +966,6 @@ div.directions {
 
 @media(max-width: 1000px) {
 	#bannerLogo {
-		/*height: 100px;*/
 		top: 55%;
 	}
 }
