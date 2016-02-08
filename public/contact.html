@@ -2,18 +2,16 @@
 <head>
   <title>Contact Wax Me Boutique</title>
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
-  <script src="js/jquery.min.js"></script>
   <script src="js/jquery.dropotron.min.js"></script>
   <script src="js/skel.min.js"></script>
   <script src="js/skel-layers.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
   <script src="js/google_maps.js"></script>
   <noscript>
     <link rel="stylesheet" href="css/skel.css" />
     <link rel="stylesheet" href="css/style.css" />
-      
   </noscript>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
@@ -77,25 +75,12 @@
   
           </div>
         </div>
-        
+      </div>
       <!-- Banner -->
 
-<div class="row spacer">
-</div>
-<div class="row spacer">
-</div>
-<div class="row spacer">
-</div>
-<div class="row spacer">
-</div>
-<div class="row spacer">
-</div>
-
 <div id="banner"> 
-
-<div class="row contact-info">
-
-  <div class="col-xs-8 col-sm-8 col-md-4 info">
+  <div class="info">
+    <h2>Book Now!</h2>
     <h3 class="divtitle">Hours</h3>
         <p class="divinfo">Monday 10:00AM - 6:00PM</p>
         <p class="divinfo">Tuesday-Friday 9:00AM - 7:00PM</p>
@@ -109,8 +94,13 @@
     <br>
     <h3 class="divtitle">Address</h3>
       <p class="divinfo">7730 Herschel Avenue
+        <br>
         Suite F
-        La Jolla, CA 92037</p>
+        <br>
+        La Jolla, CA 92037
+        <br>
+        <a href="" id="toggle_map" class="divinfo" data-toggle="modal">See Map</a> / <a href="" class="divinfo" data-toggle="modal" data-target="#directions">Get Directions</a>
+      </p>
     <br>
     <br>
     <h3 class="divtitle">Email</h3>
@@ -124,30 +114,40 @@
         <img src="images/cash.png"/>
   </div>
 
-  <div class="col-xs-8 col-sm-8 col-md-4 map">
-      <div id="googleMap" style="width: 100%; height: 400px;">
-      </div>
-  </div>
-  <div class="col-xs-8 col-sm-8 col-md-3 directions">
-      <div id="get_directions">
-        <form action="https://maps.google.com/maps" method="get" target="_blank">
-         <label for="saddr">Enter your location</label>
-         <input type="text" name="saddr" />
-         <input type="hidden" name="daddr" value="7730 Herschel Ave, La Jolla, CA 92037" />
-         <br>
-         <input type="submit" value="Get directions" />
-        </form>
+  <div id="map" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <div id="googleMap" style="width: 568px; height: 400px;">
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <div id="directions" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="white row">
+            <div id="get_directions">
+              <form action="https://maps.google.com/maps" method="get" target="_blank">
+               <label for="saddr">Enter your location</label>
+               <input type="text" name="saddr" />
+               <input type="hidden" name="daddr" value="7730 Herschel Ave, La Jolla, CA 92037" />
+               <br>
+               <input type="submit" value="Get directions" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
-<div class="row spacer">
-</div>
-<div class="row spacer">
-</div>
-<div class="row spacer">
-</div>
-<div class="row spacer">
-</div>
 </body>

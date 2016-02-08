@@ -17,13 +17,24 @@ $(document).ready(function(){
     });
 
     function initMap() {
-    var waxmebotique = {lat: 32.844319, lng: -117.272645};
+    var waxmeboutique = {lat: 32.846055, lng: -117.275027};
     var home = {lat: 32.793928, lng: -117.247630};
 
     var map = new google.maps.Map(document.getElementById('googleMap'), {
-      center: waxmebotique,
+      center: waxmeboutique,
       scrollwheel: false,
       zoom: 7
     });
   }
+
+  // on click run this code
+  $('#toggle_map').on('click', function(){
+    $('#map').modal('toggle');
+    
+
+    $('#map').on('shown.bs.modal', function(){
+      google.maps.event.trigger(map, "resize");
+      map.setCenter(new google.maps.LatLng(32.846055, -117.275027));
+    });
+  })
 });
