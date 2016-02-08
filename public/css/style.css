@@ -199,10 +199,22 @@ h3.divtitle {
 }
 
 .map {
+	padding: 0;
+}
+
+#googleMap {
 	height: 400px;
 	width: 568px;
-	right: 0;
-	padding: 0;
+}
+@media(max-width: 840px){
+	#googleMap {
+		height: 200;
+		width: 284;
+	}
+	.map {
+		height: 200;
+		width: 284;
+	}
 }
 
 div.directions {
