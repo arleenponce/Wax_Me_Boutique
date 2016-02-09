@@ -212,6 +212,10 @@ h3.divtitle {
 		height: 300px;
 		width: 100%;
 	}
+	#directions {
+		margin-top: 25%;
+		width: 100%;
+	}
 }
 
 div.directions {
