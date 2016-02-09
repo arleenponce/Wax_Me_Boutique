@@ -204,16 +204,12 @@ h3.divtitle {
 
 #googleMap {
 	height: 400px;
-	width: 568px;
+	width: 100%;
 }
 @media(max-width: 840px){
 	#googleMap {
-		height: 200;
-		width: 284;
-	}
-	.map {
-		height: 200;
-		width: 284;
+		height: 280px;
+		width: 100%;
 	}
 }
 
