@@ -9,6 +9,36 @@
 
 /*ARLEEN EDITS*/
 
+@media(min-width: 841px) {
+	.fa-phone {
+	visibility: hidden;
+	}
+}
+
+@media(max-width: 840px) {
+	#phone {
+		visibility: visible;
+		color: white;
+		font-size: 250%;
+		height: 50px;
+		width: 50px;
+		z-index: 3;
+		position: absolute;
+		right: 10px;
+	}
+
+	#call:link {
+		color: white;
+	}
+	#call:visited {
+		color: white;
+	}
+	#call:hover {
+		color: white;
+		text-decoration: none;
+	}
+}
+
 #service_title{
 	text-transform: none;
 }
