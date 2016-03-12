@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   
   devise_for :admins
   
+  match '/services/search', {:via => :get, :to => 'services#search'}
+
   root :to => "home#index"
   match('services/wax-men-body', {:via => :get, :to => "services#wax_men_body"})
   match('services/wax-men-bikini', {:via => :get, :to => "services#wax_men_bikini"})

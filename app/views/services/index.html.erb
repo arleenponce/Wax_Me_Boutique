@@ -8,6 +8,11 @@
       <h1 id="admin">Manage Services</h1>
     </div>
     <div class="col-md-2">
+      <form action="/services/search" method="get">
+        <label for="search_by_name" id="search">Search for:</label>
+        <input id="search_by_name" type="text" name="search_string"/>
+      <input type="submit" value="Find"/>
+    <form>
     </div>
     <div class="col-md-2">
       <button type="button" onclick="location.href='/services/new'" class="admin-btn add">Add a Service</button>

@@ -1,7 +1,8 @@
 class ServicesController < ApplicationController
   respond_to :html, :json
   before_action :set_service, only: [:show, :edit, :update, :destroy]
-  # before_action :authenticate_user!, except: [:wax_men_face, :wax_men_bikini, :wax_men_body, :wax_men_packages, :wax_women_face, :wax_women_bikini, :wax_women_brow, :wax_women_body, :wax_women_packages, :organic_facials, :chemical_peels, :advanced_treatment, :specials, :spray_tan]
+  before_filter :authenticate_admin!, except: [:wax_men_face, :wax_men_bikini, :wax_men_body, :wax_men_packages, :wax_women_face, :wax_women_bikini, :wax_women_brow, :wax_women_body, :wax_women_packages, :organic_facials, :chemical_peels, :advanced_treatment, :specials, :spray_tan]
+  
   # GET /services
   # GET /services.json
   def index
@@ -21,6 +22,10 @@ class ServicesController < ApplicationController
   def edit
   end
 
+  def search
+    search_string = params[:search_string].strip
+    @found_services = Service.fuzzy_search(search_string)
+  end
   # POST /services
   # POST /services.json
   def create

@@ -5,6 +5,16 @@
 @import "font-awesome.min";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 
+#search_by_name {
+	background-color: white;
+	margin: 0px 0px 10px 0px;
+}
+
+label#search {
+	font-size: 25px;
+	color: white;
+	font-weight: lighter;
+}
 
 p {
 	text-align: justify !important;
@@ -214,7 +224,7 @@ input.admin-btn {
 	background-color: rgba(255,255,255,.7);
 	padding: 2em;
 	position: absolute;
-	top: 25%;
+	top: 32%;
 	left: 17.5%;
 	bottom: 0;
 	overflow: auto;

@@ -30,7 +30,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'unicorn'
 
 gem 'devise'
-gem 'yelp'
+gem 'textacular', '~> 3.0'
 # gem 'rails_12factor'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
