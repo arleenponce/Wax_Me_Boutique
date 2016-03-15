@@ -1,7 +1,7 @@
 class ServicesController < ApplicationController
   respond_to :html, :json
   before_action :set_service, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate_admin!, except: [:wax_men_face, :wax_men_bikini, :wax_men_body, :wax_men_packages, :wax_women_face, :wax_women_bikini, :wax_women_brow, :wax_women_body, :wax_women_packages, :organic_facials, :chemical_peels, :advanced_treatment, :specials, :spray_tan]
+  before_filter :authenticate_admin!, except: [:wax_men_face, :wax_men_bikini, :wax_men_body, :wax_men_packages, :wax_women_face, :wax_women_bikini, :wax_women_brow, :wax_women_body, :wax_women_packages, :organic_facials, :chemical_peels, :advanced_treatment, :spray_tan, :show_specials]
   
   # GET /services
   # GET /services.json
@@ -109,10 +109,6 @@ class ServicesController < ApplicationController
        render '/services/sunless-tans'
   end
 
-  def specials
-       @specials = Service.where(:service_type => 'Special')
-       render '/services/specials'
-  end
   #Finish rendering each service page
 
   # PATCH/PUT /services/1
