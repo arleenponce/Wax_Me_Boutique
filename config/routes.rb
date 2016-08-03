@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   match('services/wax-women-packages', {:via => :get, :to => "services#wax_women_packages"})
   match('services/advanced-treatment', {:via => :get, :to => "services#advanced_treatment"})
   match('services/corrective-peels', {:via => :get, :to => "services#chemical_peels"})
-  match('services/signature-facials', {:via => :get, :to => "services#organic_facials"})
+  match('services/facials', {:via => :get, :to => "services#facials"})
   match('services/waxing', {:via => :get, :to => "services#waxing"})
   match('services/sunless-tan', {:via => :get, :to => "services#spray_tan"})
 

@@ -2,13 +2,10 @@
 
 <div class="body facial">
   <div class="col-xs-12 col-sm-8 col-md-6 menu">
-      <h1 id="title">Signature Facials</h1>
+      <h1 id="title">Facials</h1>
       <p>We customize all of our treatments based on your individual needs. At Wax Me Boutique, we believe in providing the best professional treatments that are safe and effective for the skin. Our products are free of parabens, animal by-products, propylene glycol, sodium lauryl sulfates, harmful colorants and fragrances, mineral oils, petroleum, and other harsh cosmetic chemicals.
       <br><br>
       The start to healthy skin is by having regular facials! We recommend getting facials every 2 - 4 weeks depending on your skin type, skin condition, age, skin goals, budget, etc. In order to get the most out of every treatment, discuss with your esthetician an ideal facial schedule and what skincare regimen to follow at home to maintain your skin in between appointments.
-      <br><br>
-      *Add-on NufACE red light therapy to any treatment to boost collagen and elastin production* $25
-      *Add-on Ultrasonic Technology to any treatment to increase exfoliation and product penetration* $25
 </p>
     
       <div class="row" id="table-head">
@@ -20,7 +17,7 @@
 
       <!-- <div class="row" id="table-body"> -->
           
-          <% @organic_facials.order("id asc").each do |service| %>
+          <% @facials.order("id asc").each do |service| %>
               <div class="row" id="table-row">
                   <div class="col-md-4" id="table-cell">
                     <%= service.service_name %>

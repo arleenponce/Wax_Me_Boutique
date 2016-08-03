@@ -1,7 +1,7 @@
 class ServicesController < ApplicationController
   respond_to :html, :json
   before_action :set_service, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate_admin!, except: [:wax_men_face, :wax_men_bikini, :wax_men_body, :wax_men_packages, :wax_women_face, :wax_women_bikini, :wax_women_brow, :wax_women_body, :wax_women_packages, :organic_facials, :chemical_peels, :advanced_treatment, :spray_tan, :show_specials]
+  before_filter :authenticate_admin!, except: [:wax_men_face, :wax_men_bikini, :wax_men_body, :wax_men_packages, :wax_women_face, :wax_women_bikini, :wax_women_brow, :wax_women_body, :wax_women_packages, :facials, :chemical_peels, :advanced_treatment, :spray_tan, :show_specials]
   
   # GET /services
   # GET /services.json
@@ -89,9 +89,9 @@ class ServicesController < ApplicationController
        render '/services/wax-women-packages'
   end
 
-  def organic_facials
-       @organic_facials = Service.where(:service_type => 'Signature Facials')
-       render '/services/signature-facials'
+  def facials
+       @facials = Service.where(:service_type => 'Signature Facials')
+       render '/services/facials'
   end
 
   def chemical_peels
