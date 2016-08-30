@@ -9,6 +9,11 @@
 
 /*ARLEEN EDITS*/
 
+
+#our_instafeed a {
+padding: 5px;
+}
+
 @media(min-width: 841px) {
 	.fa-phone {
 	visibility: hidden;
