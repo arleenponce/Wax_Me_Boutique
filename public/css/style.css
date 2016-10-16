@@ -9,6 +9,18 @@
 
 /*ARLEEN EDITS*/
 
+div.consentforms{
+	padding: 5%;
+}
+
+input#name{
+	width: 200px !important;
+	display: inline-block;
+}
+
+input#initial{
+	width: 50px !important;
+}
 
 #our_instafeed a {
 padding: 5px;
@@ -418,8 +430,9 @@ div.directions {
 	}
 
 /* Form */
-
+	
 	input[type="text"],
+	input[type="date"],l
 	input[type="password"],
 	input[type="email"],
 	textarea {
