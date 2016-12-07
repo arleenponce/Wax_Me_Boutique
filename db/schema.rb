@@ -36,13 +36,6 @@ ActiveRecord::Schema.define(version: 20160227200822) do
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
   add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
 
-  create_table "service_types", force: :cascade do |t|
-    t.string   "service_type"
-    t.integer  "service_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
   create_table "services", force: :cascade do |t|
     t.string   "service_name"
     t.text     "cost"
@@ -50,7 +43,6 @@ ActiveRecord::Schema.define(version: 20160227200822) do
     t.text     "description"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
-    t.string   "service_type"
   end
 
 end
