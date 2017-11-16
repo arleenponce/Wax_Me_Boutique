@@ -23,26 +23,19 @@
                 <img id="bannerLogo" src="/images/wax_me_logo.png" />
                 <ul>
                   <li class="active"><a href="/">Home</a></li>
+                  <li><a href="#">Brows</a>
+                  <ul>
+                    <li><a href="/services/wax-brows">Brow Bar</a></li>
+                    <li><a href="/services/microblading">Microblading</a></li>
+                  </ul>
+                  </li>
                   <li>
                   <a href="#">Waxing</a>
                   <ul>
-                    <li><a href="#">For Her</a>
-                    <ul>  
-                      <li><a href="/services/wax-women-face">Face</a></li>
-                      <li><a href="/services/wax-women-bikini">Bikini</a></li>
-                      <li><a href="/services/wax-women-brow">Brow Bar</a></li>
-                      <li><a href="/services/wax-women-body">Body</a></li>
-                      <li><a href="/services/wax-women-packages">Packages</a></li>
-                    </ul>
-                    <li><a href="#">For Him</a>
-                    <ul>  
-                      <li><a href="/services/wax-men-face">Face</a></li>
-                      <li><a href="/services/wax-men-bikini">Bikini</a></li>
-                      <li><a href="/services/wax-men-body">Body</a></li>
-                      <li><a href="/services/wax-men-packages">Packages</a></li>
-                    </ul>
+                    <li><a href="/services/wax-women">For Her</a>
+                    <li><a href="/services/wax-men">For Him</a>
                   </ul>
-
+                  </li>
                   <li>
                   <a href="#">Skin Care</a>
                   <ul>
@@ -61,14 +54,9 @@
                   <a href="/contact">Contact</a>
                   <li>
                   <a href="/booknow"><strong>Book Online!</strong></a></li>
-                            <% if admin_signed_in? %>
-                                Logged in as <strong><%= current_admin.username %></strong><br>
-                                <%= link_to 'Edit Profile', edit_admin_registration_path %> | <%= link_to "Logout", destroy_admin_session_path, method: :delete %> | <a href="/services">All Services</a>
-                            <% else %>
-                              <a href="tel:+18582248126"><input type="button" class="call" value="858-224-8126"></a>
-                            <% end %>
-                          </ul>       
-                        </nav>
+                  <a href="tel:+18582248126"><input type="button" class="call" value="858-224-8126"></a>
+                </ul>       
+              </nav>
             
                     </div>
                     

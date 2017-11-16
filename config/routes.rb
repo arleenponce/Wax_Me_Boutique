@@ -7,20 +7,14 @@ Rails.application.routes.draw do
   match '/services/search', {:via => :get, :to => 'services#search'}
 
   root :to => "home#index"
-  match('services/wax-men-body', {:via => :get, :to => "services#wax_men_body"})
-  match('services/wax-men-bikini', {:via => :get, :to => "services#wax_men_bikini"})
-  match('services/wax-men-brow', {:via => :get, :to => "services#wax_men_brow"})
-  match('services/wax-men-face', {:via => :get, :to => "services#wax_men_face"})
-  match('services/wax-men-packages', {:via => :get, :to => "services#wax_men_packages"})
-  match('services/wax-women-body', {:via => :get, :to => "services#wax_women_body"})
-  match('services/wax-women-bikini', {:via => :get, :to => "services#wax_women_bikini"})
-  match('services/wax-women-brow', {:via => :get, :to => "services#wax_women_brow"})
-  match('services/wax-women-face', {:via => :get, :to => "services#wax_women_face"})
-  match('services/wax-women-packages', {:via => :get, :to => "services#wax_women_packages"})
+  match('services/wax-men', {:via => :get, :to => "services#wax_men"})
+  match('services/wax-women', {:via => :get, :to => "services#wax_women"})
+  match('services/wax-brow', {:via => :get, :to => "services#wax_brow"})
   match('services/advanced-treatment', {:via => :get, :to => "services#advanced_treatment"})
   match('services/corrective-peels', {:via => :get, :to => "services#chemical_peels"})
   match('services/facials', {:via => :get, :to => "services#facials"})
-  match('services/waxing', {:via => :get, :to => "services#waxing"})
+  # match('services/waxing', {:via => :get, :to => "services#waxing"})
+  match('services/microblading', {:via => :get, :to => "services#microblading"})
   match('services/sunless-tan', {:via => :get, :to => "services#spray_tan"})
 
   resources :services

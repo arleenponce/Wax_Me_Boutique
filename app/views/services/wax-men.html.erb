@@ -3,7 +3,7 @@
 <div class="body wax_men">
 
    <div class="col-xs-12 col-sm-8 col-md-6 menu">
-      <h1 id="title">Waxing For Him - Face</h1>
+      <h1 id="title">Waxing For Him</h1>
       <p>Save money when you choose waxing over shaving. With the increasing costs of razors and blades, wouldn't it be nice to not have to worry about buying them anymore? Switch to waxing and be amazed at how much money you can save.
  
       Waxing is also much safer than shaving because you're avoiding the risk of nicks, cuts, ingrown hairs, and razor burn that comes with shaving.
@@ -19,9 +19,9 @@
             <div class="col-md-3"></div>
       </div>
 
-      <!-- <div class="row" id="table-body"> -->
+      <div class="row" id="table-body">
           
-          <% @wax_men_face.order("id asc").each do |service| %>
+          <% @wax_men.order("id asc").each do |service| %>
               <div class="row" id="table-row">
                   <div class="col-md-4" id="table-cell">
                     <%= service.service_name %>
@@ -81,5 +81,5 @@
                   </div>
                   
           <% end %>
-        </div>
-    </div>
+  </div>
+</div>

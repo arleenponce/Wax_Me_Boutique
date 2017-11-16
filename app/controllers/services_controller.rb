@@ -1,7 +1,7 @@
 class ServicesController < ApplicationController
   respond_to :html, :json
   before_action :set_service, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate_admin!, except: [:wax_men_face, :wax_men_bikini, :wax_men_body, :wax_men_packages, :wax_women_face, :wax_women_bikini, :wax_women_brow, :wax_women_body, :wax_women_packages, :facials, :chemical_peels, :advanced_treatment, :spray_tan, :show_specials]
+  before_filter :authenticate_admin!, except: [:wax_men, :wax_women, :wax_brow, :facials, :chemical_peels, :advanced_treatment, :spray_tan, :show_specials, :microblading]
   
   # GET /services
   # GET /services.json
@@ -44,50 +44,21 @@ class ServicesController < ApplicationController
   end
 
   #Render each service page
-  def wax_men_face
-       @wax_men_face = Service.where(:service_type => 'Wax-Men-Face')
-       render '/services/wax-men-face'
+  def wax_brows
+       @wax_men = Service.where(:service_type => 'Wax-Brows')
+       render '/services/wax-brows'
   end
 
-  def wax_men_body
-       @wax_men_body = Service.where(:service_type => 'Wax-Men-Body')
-       render '/services/wax-men-body'
+  def wax_men
+       @wax_men = Service.where(:service_type => 'Wax-Men')
+       render '/services/wax-men'
   end
 
-  def wax_men_bikini
-       @wax_men_bikini = Service.where(:service_type => 'Wax-Men-Bikini')
-       render '/services/wax-men-bikini'
+  def wax_women
+       @wax_women = Service.where(:service_type => 'Wax-Women')
+       render '/services/wax-women'
   end
 
-  def wax_men_packages
-       @wax_men_packages = Service.where(:service_type => 'Wax-Men-Packages')
-       render '/services/wax-men-packages'
-  end
-
-  def wax_women_face
-       @wax_women_face = Service.where(:service_type => 'Wax-Women-Face')
-       render '/services/wax-women-face'
-  end
-
-  def wax_women_bikini
-       @wax_women_bikini = Service.where(:service_type => 'Wax-Women-Bikini')
-       render '/services/wax-women-bikini'
-  end
-
-  def wax_women_brow
-       @wax_women_brow = Service.where(:service_type => 'Wax-Women-Brow')
-       render '/services/wax-women-brow'
-  end
-
-  def wax_women_body
-       @wax_women_body = Service.where(:service_type => 'Wax-Women-Body')
-       render '/services/wax-women-body'
-  end
-
-  def wax_women_packages
-       @wax_women_packages = Service.where(:service_type => 'Wax-Women-Packages')
-       render '/services/wax-women-packages'
-  end
 
   def facials
        @facials = Service.where(:service_type => 'Signature Facials')
@@ -107,6 +78,11 @@ class ServicesController < ApplicationController
   def spray_tan
        @tan_services = Service.where(:service_type => 'Sunless Tan')
        render '/services/sunless-tans'
+  end
+
+   def microblading
+       @microblading = Service.where(:service_type => 'Microblading')
+       render '/services/microblading'
   end
 
   #Finish rendering each service page
