@@ -45,8 +45,8 @@ class ServicesController < ApplicationController
 
   #Render each service page
   def wax_brows
-       @wax_men = Service.where(:service_type => 'wax-browss')
-       render '/services/wax-browss'
+       @wax_men = Service.where(:service_type => 'wax-brows')
+       render '/services/wax-brows'
   end
 
   def wax_men

@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   root :to => "home#index"
   match('services/wax-men', {:via => :get, :to => "services#wax_men"})
   match('services/wax-women', {:via => :get, :to => "services#wax_women"})
-  match('services/wax-browss', {:via => :get, :to => "services#wax_brows"})
+  match('services/wax-brows', {:via => :get, :to => "services#wax_brows"})
   match('services/advanced-treatment', {:via => :get, :to => "services#advanced_treatment"})
   match('services/corrective-peels', {:via => :get, :to => "services#chemical_peels"})
   match('services/facials', {:via => :get, :to => "services#facials"})
