@@ -1,7 +1,7 @@
 class ServicesController < ApplicationController
   respond_to :html, :json
   before_action :set_service, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate_admin!, except: [:wax_men, :wax_women, :wax_brow, :facials, :chemical_peels, :advanced_treatment, :spray_tan, :show_specials, :microblading]
+  before_filter :authenticate_admin!, except: [:wax_men, :wax_women, :wax_brows, :facials, :chemical_peels, :advanced_treatment, :spray_tan, :show_specials, :microblading]
   
   # GET /services
   # GET /services.json
