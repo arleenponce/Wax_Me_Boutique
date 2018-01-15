@@ -79,7 +79,7 @@ div.wax_men {
 }
 
 div.microblading {
-	background: image-url("image1.jpg") no-repeat;
+	background: image-url("image1.png") no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	position: absolute;
@@ -91,6 +91,18 @@ div.microblading {
 
 div.wax_women {
 	background: image-url("wax_women.jpg") no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+}
+
+div.wax_brows {
+	background: image-url("brow_bar.jpg") no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	position: absolute;
