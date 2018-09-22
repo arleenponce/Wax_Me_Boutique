@@ -19,12 +19,13 @@ input#name{
 }
 
 input#initial{
-	width: 50px !important;
+	width: 50px !important; 
 }
 
-#our_instafeed a {
-padding: 5px;
+.instaimg img{
+	margin-right: 3px;
 }
+
 
 @media(min-width: 841px) {
 	.fa-phone {

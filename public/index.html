@@ -19,8 +19,6 @@
 		<script src="js/init.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/specials.js"></script>
-		<script src="js/spectragram.min.js"></script>
-		<script src="js/pull_instagram.js"></script>
 
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
@@ -28,6 +26,7 @@
 			
 		</noscript>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
@@ -297,8 +296,10 @@
 					<li><a href="https://www.youtube.com/channel/UCPKwxPDm82HS-Qy2cW0WLOA" class="fa fa-youtube darktext"><span>YouTube</span></a></li>
 				</ul>
 				Photos from Wax Me Boutique
-				<div id="our_instafeed" height="300px"></div>
-				<hr />
+				<!-- <div class="container"> -->
+					<div id="instafeed" class="row"></div>
+				<!-- </div> -->
+			
 			</section>
 			
 			<!-- Copyright -->
@@ -322,6 +323,7 @@
 			    }   
 			});
 		</script>
-
+		<script src="js/instafeed.min.js"></script>
+		<script src="js/custom.js"></script>
 	</body>
 </html>
